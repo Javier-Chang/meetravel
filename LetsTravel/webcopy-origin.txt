@@ -1,0 +1,52 @@
+Uri: https://fonts.googleapis.com/css?family=Noto+Sans+TC
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\css
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/icon?family=Material+Icons
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\icon
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\s\materialicons\v140\flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/notosanstc/v26/-nF7OG829Oofr2wohFbTp9i1OCEJ.otf
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\s\notosanstc\v26\-nF7OG829Oofr2wohFbTp9i1OCEJ.otf
+Content Type: font/otf
+
+Uri: https://letstravel.com.tw/
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\index.htm
+Content Type: text/html
+
+Uri: https://letstravel.com.tw/favicon.ico
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\favicon.ico
+Content Type: image/x-icon
+
+Uri: https://letstravel.com.tw/main-es2015.bd55e2a5bf29168b52f2.js
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\main-es2015.bd55e2a5bf29168b52f2.js
+Content Type: application/javascript
+
+Uri: https://letstravel.com.tw/main-es5.bd55e2a5bf29168b52f2.js
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\main-es5.bd55e2a5bf29168b52f2.js
+Content Type: application/javascript
+
+Uri: https://letstravel.com.tw/polyfills-es2015.b1b4539dab1840335945.js
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\polyfills-es2015.b1b4539dab1840335945.js
+Content Type: application/javascript
+
+Uri: https://letstravel.com.tw/polyfills-es5.b43423c6d88aefbdc291.js
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\polyfills-es5.b43423c6d88aefbdc291.js
+Content Type: application/javascript
+
+Uri: https://letstravel.com.tw/runtime-es2015.aa9f2bb7ca184305ac5b.js
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\runtime-es2015.aa9f2bb7ca184305ac5b.js
+Content Type: application/javascript
+
+Uri: https://letstravel.com.tw/runtime-es5.aa9f2bb7ca184305ac5b.js
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\runtime-es5.aa9f2bb7ca184305ac5b.js
+Content Type: application/javascript
+
+Uri: https://letstravel.com.tw/styles.16d89f40a1363ddba41b.css
+File Name: C:\Users\ChaoSK\Desktop\樂子旅遊\letstravel.com.tw\styles.16d89f40a1363ddba41b.css
+Content Type: text/css
+
