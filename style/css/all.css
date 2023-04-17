@@ -196,7 +196,7 @@ article h5, article h6, .article h5, .article h6 { margin-bottom: 6px; }
 
 /* body { background-color: #f5f4f3; } */
 
-.wrap_top_bar { overflow: hidden; max-width: 1280px; margin-left: auto; margin-right: auto; background-color: white; }
+.wrap_top_bar { overflow: hidden; max-width: 4096px; margin-left: auto; margin-right: auto; background-color: white; }
 
 .wrap_bottom_of_page { overflow: hidden; max-width: 1280px; margin-left: auto; margin-right: auto; }
 
