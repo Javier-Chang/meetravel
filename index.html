@@ -378,18 +378,23 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
 
 		<script>
-			<!-- let btn = document.getElementById("success");-->
-			<!-- btn.addEventListener("click", success__fn, false);-->
-			
+			 let btn = document.getElementById("success");
+			if (btn) {
+			 btn.addEventListener("click", success__fn, false);
+			}
 			
 			let btn1 = document.getElementById("success1");
-			btn1.addEventListener("click", success__fn, false);
+			if (btn1) {
+				btn1.addEventListener("click", success__fn, false);
+			}
 			
 			<!-- let btn2 = document.getElementById("success2"); -->
 			<!-- btn2.addEventListener("click", success__fn, false); -->
 			
 			let btn3 = document.getElementById("success3");
-			btn3.addEventListener("click", success__fn, false);
+			if (btn3) {
+				btn3.addEventListener("click", success__fn, false);
+			}
 			
 			
 			
