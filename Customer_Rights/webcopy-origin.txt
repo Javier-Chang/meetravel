@@ -1,0 +1,176 @@
+Uri: https://img.travel4u.com.tw/company/favicon/apple-touch-icon.png
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\company\favicon\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://img.travel4u.com.tw/company/favicon/favicon-16x16.png
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\company\favicon\favicon-16x16.png
+Content Type: image/png
+
+Uri: https://img.travel4u.com.tw/company/favicon/favicon-32x32.png
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\company\favicon\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://img.travel4u.com.tw/company/favicon/site.webmanifest
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\company\favicon\site.webmanifest
+Content Type: binary/octet-stream
+
+Uri: https://img.travel4u.com.tw/www/statics/bootstrap-5.1.3/css/bootstrap.min.css
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\www\statics\bootstrap-5.1.3\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://img.travel4u.com.tw/www/statics/bootstrap-5.1.3/js/bootstrap.bundle.min.js
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\www\statics\bootstrap-5.1.3\js\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://img.travel4u.com.tw/www/statics/jquery-3.5.1/jquery-3.5.1.min.js
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\www\statics\jquery-3.5.1\jquery-3.5.1.min.js
+Content Type: application/javascript
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/css/all.css
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\css\all.css
+Content Type: text/css
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.eot
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.eot?
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.svg
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-brands-400.svg
+Content Type: image/svg+xml
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.ttf
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-brands-400.ttf
+Content Type: font/ttf
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.woff
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-brands-400.woff
+Content Type: application/font-woff
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.woff2
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-brands-400.woff2
+Content Type: font/woff2
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.eot
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.eot?
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.svg
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.ttf
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-regular-400.ttf
+Content Type: font/ttf
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.woff
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-regular-400.woff
+Content Type: application/font-woff
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-regular-400.woff2
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.eot
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.eot?
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.svg
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.ttf
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-solid-900.ttf
+Content Type: font/ttf
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.woff
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-solid-900.woff
+Content Type: application/font-woff
+
+Uri: https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.woff2
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\releases\v5.3.1\webfonts\fa-solid-900.woff2
+Content Type: font/woff2
+
+Uri: https://www.travel4u.com.tw/jsi18n/
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\jsi18n\index.htm
+Content Type: text/javascript
+
+Uri: https://www.travel4u.com.tw/privacy/
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\privacy\index.htm
+Content Type: text/html
+
+Uri: https://www.travel4u.com.tw/statics/bootstrap-datepicker/bootstrap-datepicker.min.css
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\bootstrap-datepicker\bootstrap-datepicker.min.css
+Content Type: text/css
+
+Uri: https://www.travel4u.com.tw/statics/bootstrap-datepicker/bootstrap-datepicker.min.js
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\bootstrap-datepicker\bootstrap-datepicker.min.js
+Content Type: application/javascript
+
+Uri: https://www.travel4u.com.tw/statics/index/css/misc/font-family.css
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\css\misc\font-family.css
+Content Type: text/css
+
+Uri: https://www.travel4u.com.tw/statics/index/css/misc/main.min.css
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\css\misc\main.min.css
+Content Type: text/css
+
+Uri: https://www.travel4u.com.tw/statics/index/css/misc/select2-bootstrap.css
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\css\misc\select2-bootstrap.css
+Content Type: text/css
+
+Uri: https://www.travel4u.com.tw/statics/index/css/misc/select2.min.css
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\css\misc\select2.min.css
+Content Type: text/css
+
+Uri: https://www.travel4u.com.tw/statics/index/css/misc/swiper-bundle7.2.min.css
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\css\misc\swiper-bundle7.2.min.css
+Content Type: text/css
+
+Uri: https://www.travel4u.com.tw/statics/index/images/sys/nav-logo.svg
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\images\sys\nav-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://www.travel4u.com.tw/statics/index/js/common/common.js
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\js\common\common.js
+Content Type: application/javascript
+
+Uri: https://www.travel4u.com.tw/statics/index/js/jquery-ui-1.13.1/jquery-ui.js
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\js\jquery-ui-1.13.1\jquery-ui.js
+Content Type: application/javascript
+
+Uri: https://www.travel4u.com.tw/statics/index/js/misc/main.min.js
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\js\misc\main.min.js
+Content Type: application/javascript
+
+Uri: https://www.travel4u.com.tw/statics/index/js/misc/select2.min.js
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\js\misc\select2.min.js
+Content Type: application/javascript
+
+Uri: https://www.travel4u.com.tw/statics/index/js/misc/swiper-bundle7.2.min.js
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\js\misc\swiper-bundle7.2.min.js
+Content Type: application/javascript
+
+Uri: https://www.travel4u.com.tw/statics/index/pdf/2020-Richmond-MFTA.pdf
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\pdf\2020-Richmond-MFTA.pdf
+Content Type: application/pdf
+
+Uri: https://www.travel4u.com.tw/statics/index/pdf/creditcardpay.pdf
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\pdf\creditcardpay.pdf
+Content Type: application/pdf
+
+Uri: https://www.travel4u.com.tw/statics/index/pdf/passenger-data-agreement.pdf
+File Name: C:\Users\ChaoSK\Desktop\www.travel4u.com.tw\statics\index\pdf\passenger-data-agreement.pdf
+Content Type: application/pdf
+
