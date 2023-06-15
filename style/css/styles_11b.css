@@ -2939,6 +2939,11 @@ a {
     text-decoration: none
 }
 
+a.customer_right {
+    color: #ffffff;
+    text-decoration: none
+}
+
 [hidden] {
     display: none!important
 }
