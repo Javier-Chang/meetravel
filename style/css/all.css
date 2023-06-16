@@ -299,7 +299,7 @@ label.form-row { display: block; }
 .header .nav:after { content: ""; display: table; clear: both; }
 .header .nav a { color: #333333; display: block; margin-top: 0px; padding-top: 12px; padding-bottom: 12px; margin-bottom: 0px; font-weight: bold; text-decoration: none; border-top: 1px solid #f2f2f2; -webkit-transition: color 0.1s; -moz-transition: color 0.1s; -o-transition: color 0.1s; transition: color 0.1s; }
 .header .nav a:hover { color: #2c6382; }
-@media (min-width: 47em) { .header .logo a { margin-top: 12px; padding-top: 0px; padding-bottom: 0px; margin-bottom: 24px; }
+@media (min-width: 47em) { .header .logo a { margin-top: 8px; padding-top: 0px; padding-bottom: 0px; margin-bottom: 8px; }
   .header .menu-btn { display: none; }
   .header .nav { margin: 0; }
   .header .nav:after { content: ""; display: table; clear: both; }
