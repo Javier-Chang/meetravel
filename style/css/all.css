@@ -292,7 +292,7 @@ label.form-row { display: block; }
 .function-bar ul li + li { border-left: 1px solid rgba(0, 0, 0, 0.5); }
 
 .header { text-align: center; }
-.header .logo a { display: block; margin: 0 auto; width: 196px; height: 56px; margin-top: 24px; padding-top: 0px; padding-bottom: 0px; margin-bottom: 24px; text-indent: -119988px; overflow: hidden; text-align: left; background: url("../images/logo.svg") no-repeat center; }
+.header .logo a { display: block; margin: 0 auto;  height: 64px; margin-top: 8px; padding-top: 0px; padding-bottom: 0px; margin-bottom: 8px; text-indent: -119988px; overflow: hidden; text-align: left; background: url("../images/Meetravel_travel_LOGO.png") no-repeat center; }
 .header .menu-btn { display: block; position: relative; z-index: 10; padding-bottom: 6px; color: #333333; text-decoration: none; }
 .header .menu-btn:hover { color: #595959; }
 .header .nav { margin: 0 -24px; padding: 0; list-style: none; }

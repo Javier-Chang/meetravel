@@ -33,7 +33,7 @@ body.modal-open{position:absolute!important}
 .owl-next i,.owl-prev i{transform:scale(2,2);color:#ccc}
 .owl-theme .owl-nav [class*=owl-]:hover{background:0 0}
 .wrap{width:100%}
-.bg-primary{background-color:#d82a43!important}
+.bg-primary{background-color:#FF5809!important}
 .bg-primarylight{background:#ffefee!important}
 .bg-light{background-color:#f8f8f8!important}
 .bg-lightgray{background-color:#f4f4f5!important}
@@ -105,7 +105,7 @@ button:focus{outline:0;border:none}
 .button.thin.primary{border-color:#d82a43;color:#d82a43}
 .button.thin.primary:hover{background-color:#d82a43;color:#fff}
 #back-top{position:fixed;bottom:80px;right:18px;padding:0;margin:0;z-index:20}
-#back-top a{text-decoration:none;display:block;color:#fff;font-size:26px;z-index:999;padding:5px;height:42px;width:42px;background:#d82a43;border-radius:50%}
+#back-top a{text-decoration:none;display:block;color:#fff;font-size:26px;z-index:999;padding:5px;height:42px;width:42px;background:#FF5809;border-radius:50%}
 #back-top a:hover{opacity:.8}
 #back-top a i{position:relative;left:8px;bottom:7px}
 input,select,textarea{border:1px solid #aaa;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;outline:0;color:#4b515e;background:0 0;font-weight:400;font-size:.9rem;width:100%;margin:5px 0 10px 0;padding:14px 15px 8px 15px;letter-spacing:1.1px;line-height:18px;cursor:pointer}
@@ -256,7 +256,7 @@ hr.hotSpot{border:.8px #eee dotted}
 .contactTitle,.tb-th{display:inline-flex;width:28%;font-size:.7rem;font-weight:700;color:#d82a43}
 .tb-td{display:inline-flex;width:72%;font-size:.8rem;color:#333}
 .topic{margin-bottom:30px}
-.topic::after{content:"";width:50px;height:4.5px;background:#d82a43;display:block;margin-top:6px}
+.topic::after{content:"";width:50px;height:4.5px;background:#FF5809;display:block;margin-top:6px}
 .about-imgbox{background:0 0;position:relative;overflow:hidden}
 .about-imgbox:after{content:"";padding-top:280px;display:block}
 .about-img{position:absolute;top:0;bottom:0;right:0;left:0;max-width:100%;margin:auto}
