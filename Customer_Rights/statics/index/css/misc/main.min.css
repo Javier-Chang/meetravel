@@ -35,7 +35,7 @@ body.modal-open{position:absolute!important}
 .wrap{width:100%}
 .bg-primary{background-color:#FF5809!important}
 .bg-primarylight{background:#ffefee!important}
-.bg-light{background-color:#fdb18b!important}
+.bg-light{ background-image: linear-gradient(to top right, #fdb18b, #ffffff);}
 .bg-lightgray{background-color:#f4f4f5!important}
 .bg-transparent{background-color:transparent!important}
 .primary-color{color:#d82a43!important}
