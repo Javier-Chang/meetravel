@@ -19,6 +19,8 @@
 		<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]-->
 		<script src="style/js/jquery-1.12.4.min.js" type="text/javascript"></script> 
 		<!--<script src="style/js/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="style/css/magnific-popup/magnific-popup.min.js" type="text/javascript"></script>
 		<script src="style/js/slick/slick.min.js" type="text/javascript"></script> 
 		<script src="style/js/all.js" type="text/javascript"></script>
@@ -132,6 +134,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 			
+		
+
+
 	</head>
 	<body>	
 		
@@ -223,8 +228,49 @@
 
 						<div _ngcontent-drm-c84 class="container padding">
 							<h1 _ngcontent-drm-c84 class="main-title">界津輕 仙台青森自由行5天</h1>
-							<travel-feature _ngcontent-drm-c84 button="立即預約" _nghost-drm-c77>
+
+								<!-- 轮播 -->
+								<div id="demo" class="carousel slide" data-bs-ride="carousel">
+									  
+									  <!-- The slideshow/carousel -->
+									  <div class="carousel-inner">
+									    <div class="carousel-item active" data-bs-interval="2000">
+									      <img src="https://letstravel.com.tw/_/assets/5yy5ho5or2koc440?key=directus-large-crop" alt="Shanghai" class="d-block" style="width:100%">
+									      <div class="carousel-caption">
+									        <h3>Shanghai</h3>
+									        <p>We had such a great time in Shanghai!</p>
+									      </div>
+									    </div>
+									    <div class="carousel-item" data-bs-interval="2000">
+									      <img src="https://letstravel.com.tw/_/assets/qxb0bahafm88skc0?key=directus-large-crop" alt="Beijing" class="d-block" style="width:100%">
+									      <div class="carousel-caption">
+									        <h3>Beijing</h3>
+									        <p>Thank you, Beijing!</p>
+									      </div> 
+									    </div>
+									    <div class="carousel-item" data-bs-interval="2000">
+									      <img src="https://letstravel.com.tw/_/assets/if0nflu42o004ss4?key=directus-large-crop" alt="Wuhan" class="d-block" style="width:100%">
+									      <div class="carousel-caption">
+									        <h3>Wuhan</h3>
+									        <p>We love the Reganmian!</p>
+									      </div>  
+									    </div>
+									  </div>
+								  
+									  <!-- Left and right controls/icons -->
+									  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+									    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									    <span class="visually-hidden">Previous</span>
+									  </button>
+									  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+									    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									    <span class="visually-hidden">Next</span>
+									  </button>
+								</div>
+
+
 								<section _ngcontent-drm-c77 id="feature" class="padding">
+
 									<div _ngcontent-drm-c77 class="carousel">
 										<carousel _ngcontent-drm-c77 _nghost-drm-c54>
 											<div _ngcontent-drm-c54 class="carousel" style="width: 300%;">
@@ -254,6 +300,8 @@
 											</div>
 										</carousel>
 									</div>
+
+
 									<div _ngcontent-drm-c77 class="content">
 										<h2 _ngcontent-drm-c77 class="orange">
 											<img _ngcontent-drm-c77 src="style/images/logo_icon.png" alt="行程特色">行程特色 </h2>
@@ -264,7 +312,6 @@
 											</button>
 									</div>
 								</section>
-							</travel-feature>
 						</div>
 					
 					</div>
