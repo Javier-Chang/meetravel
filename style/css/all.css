@@ -150,7 +150,7 @@ h5 { font-size: 15px; line-height: 21px; }
 
 h6 { font-size: 13px; line-height: 18px; }
 
-p { margin-top: 0px; margin-bottom: 24px; font-size: 16px; line-height: 24px; }
+p { margin-top: 0px; margin-bottom: 24px; font-size: 16px; line-height: 32px; }
 
 blockquote { margin: 0; padding: 0; border: 0; margin: 24px 0; border-left: 3px solid #f2f2f2; padding-left: 21px; color: #999999; }
 blockquote p { margin-bottom: 6px; }
