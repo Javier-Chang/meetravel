@@ -6,34 +6,153 @@
 
     <body>
 
-        <div class="pricing-tabs-wrapper md:max-w-xl lg:max-w-6xl m-auto mt-6">
-                <div class="grid grid-cols-3 items-center text-center md:rounded-t-2xl bg-[#cbe2fa] shadow-inner p-3">
-                    <div plan-toggle="lite" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
-                        <h4 class="mb-2 pointer-events-none">輕量版</h4>
-                        <span class="label label-sales label-pink w-fit mx-auto pointer-events-none hidden">年繳最低優惠</span>
+            <div class="pricing-tabs-wrapper md:max-w-xl lg:max-w-6xl m-auto mt-6">
+                    <div class="grid grid-cols-3 items-center text-center md:rounded-t-2xl bg-[#cbe2fa] shadow-inner p-3">
+                        <div plan-toggle="lite" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
+                            <h4 class="mb-2 pointer-events-none">輕量版</h4>
+                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none hidden">年繳最低優惠</span>
+                        </div>
+                        <div plan-toggle="standard" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
+                            <h4 class="mb-2 pointer-events-none">標準版</h4>
+                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none hidden">年繳最低優惠</span>
+                        </div>
+                        <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected">
+                            <h4 class="mb-2 pointer-events-none">商務版</h4>
+                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none">年繳最低優惠</span>
+                        </div>
                     </div>
-                    <div plan-toggle="standard" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
-                        <h4 class="mb-2 pointer-events-none">標準版</h4>
-                        <span class="label label-sales label-pink w-fit mx-auto pointer-events-none hidden">年繳最低優惠</span>
+                    <div class="md:rounded-b-2xl py-6 md:py-10 bg-[#e0efff]">
+                        <div plan-name="lite" plan-type="ecommerce" class="hidden grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
+                            <div>
+                                <img src="https://resources.easystore.co/website/images/pricing/plan/dev/lite.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
+                                <span class="block md:hidden h2 mb-4 font-bold">新手開店必備之選</span>
+                                <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>399</strong>
+                                <b class="text-gray-500">/月</b>
+                                <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">799</s>
+                            </div>
+                            <div class="">
+                                <h2 class="hidden md:block mb-3">新手開店必備之選</h2>
+                                <ul class="text-lg">
+                                    <li class="mb-3 text-2xl font-bold">所包含的功能</li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                            <use xlink:href="#icon-percentage"></use>
+                                        </svg>
+                                        無成交手續費
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-dollar"></use>
+                                        </svg>
+                                        可開通 <b>2 個銷售管道</b>
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        3 步驟輕鬆架設品牌官網
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        社群電商經營（Facebook 、 Instagram &amp; LINE）
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        折扣及優惠券
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        多元金物流選項
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                            <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        銷售分析報告
+                                    </li>
+                                </ul>
+                                <div class="mt-5 md:mt-7">
+                                    <a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=it8643-r30c1-f0em-22te&amp;trial_plan_id=4" class="btn btn-pink  btn-xl  mb-4">
+                                        開始試用 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected">
-                        <h4 class="mb-2 pointer-events-none">商務版</h4>
-                        <span class="label label-sales label-pink w-fit mx-auto pointer-events-none">年繳最低優惠</span>
-                    </div>
-                </div>
-                <div class="md:rounded-b-2xl py-6 md:py-10 bg-[#e0efff]">
-                    <div plan-name="lite" plan-type="ecommerce" class="hidden grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
+                    <div plan-name="standard" plan-type="ecommerce" class="grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto hidden">
                         <div>
-                            <img src="https://resources.easystore.co/website/images/pricing/plan/dev/lite.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-                            <span class="block md:hidden h2 mb-4 font-bold">新手開店必備之選</span>
-                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>399</strong>
+                            <img src="https://resources.easystore.co/website/images/pricing/plan/dev/standard.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
+                            <span class="block md:hidden h2 mb-4 font-bold">電商成長加速器</span>
+                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>1,299</strong>
                             <b class="text-gray-500">/月</b>
-                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">799</s>
+                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">2,499</s>
                         </div>
                         <div class="">
-                            <h2 class="hidden md:block mb-3">新手開店必備之選</h2>
+                            <h2 class="hidden md:block mb-3">電商成長加速器</h2>
                             <ul class="text-lg">
-                                <li class="mb-3 text-2xl font-bold">所包含的功能</li>
+                                <li class="mb-3 text-2xl font-bold">所有包含在<b>輕量版</b>中的功能</li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                       <use xlink:href="#icon-percentage"></use>
+                                    </svg>
+                                    無成交手續費
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-dollar"></use>
+                                    </svg>
+                                    可開通 <b>5 個銷售管道</b>
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-check"></use>
+                                    </svg>
+                                    IG、FB、LINE 直播 +1 收單
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-check"></use>
+                                    </svg>
+                                    促銷優惠工具：贈品與加購
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-check"></use>
+                                    </svg>
+                                    蝦皮購物同步銷售
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-check"></use>
+                                    </svg>
+                                    部落格行銷
+                                </li>
+                            </ul>
+                            <div class="mt-5 md:mt-7">
+                                <a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=es-ab-22-std30&amp;trial_plan_id=5" class="btn btn-pink btn-xl mb-4">
+                                    開始試用 
+                                </a>
+                            </div>                
+                        </div>
+                    </div>
+                    <div plan-name="business" plan-type="ecommerce" class="grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
+                        <div>
+                            <img src="https://resources.easystore.co/website/images/pricing/plan/dev/business.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
+                            <span class="block md:hidden h2 mb-4 font-bold">多管道整合銷售</span>
+                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>2,599</strong>
+                            <b class="text-gray-500">/月</b>
+                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">4,999</s>
+                        </div>
+                        <div class="">
+                            <h2 class="hidden md:block mb-3">多管道整合銷售</h2>             
+                            <ul class="text-lg">
+                                <li class="mb-3 text-2xl font-bold">所有包含在<b>標準版</b>中的功能</li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-percentage"></use>
@@ -42,170 +161,53 @@
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                         <use xlink:href="#icon-dollar"></use>
-                                    </svg>
-                                    可開通 <b>2 個銷售管道</b>
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                         <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    3 步驟輕鬆架設品牌官網
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                         <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    社群電商經營（Facebook 、 Instagram &amp; LINE）
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                         <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    折扣及優惠券
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                         <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    多元金物流選項
+                                        <use xlink:href="#icon-dollar"></use>
+                                              </svg>
+                                    可開通 <b>10 個銷售管道</b>
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    銷售分析報告
+                                    會員分級與點數積分計劃
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-check"></use>
+                                    </svg>
+                                    推薦分潤行銷
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-check"></use>
+                                    </svg>
+                                    訊息群發中心
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-check"></use>
+                                    </svg>
+                                    訊息統一管理
+                                </li>
+                                <li class="relative mb-1 md:mb-2 pl-6">
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                        <use xlink:href="#icon-check"></use>
+                                    </svg>
+                                    全溫層物流設定
                                 </li>
                             </ul>
                             <div class="mt-5 md:mt-7">
-                                <a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=it8643-r30c1-f0em-22te&amp;trial_plan_id=4" class="btn btn-pink  btn-xl  mb-4">
-                                    開始試用 
+                                <a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=us0203-r40c1-f0em-22ss&amp;trial_plan_id=6" class="btn btn-pink btn-xl mb-4">
+                                開始試用 
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div plan-name="standard" plan-type="ecommerce" class="grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto hidden">
-                    <div>
-                        <img src="https://resources.easystore.co/website/images/pricing/plan/dev/standard.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-                        <span class="block md:hidden h2 mb-4 font-bold">電商成長加速器</span>
-                        <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>1,299</strong>
-                        <b class="text-gray-500">/月</b>
-                        <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">2,499</s>
-                    </div>
-                    <div class="">
-                        <h2 class="hidden md:block mb-3">電商成長加速器</h2>
-                        <ul class="text-lg">
-                            <li class="mb-3 text-2xl font-bold">所有包含在<b>輕量版</b>中的功能</li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                   <use xlink:href="#icon-percentage"></use>
-                                </svg>
-                                無成交手續費
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-dollar"></use>
-                                </svg>
-                                可開通 <b>5 個銷售管道</b>
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                IG、FB、LINE 直播 +1 收單
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                促銷優惠工具：贈品與加購
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                蝦皮購物同步銷售
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                部落格行銷
-                            </li>
-                        </ul>
-                        <div class="mt-5 md:mt-7">
-                            <a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=es-ab-22-std30&amp;trial_plan_id=5" class="btn btn-pink btn-xl mb-4">
-                                開始試用 
-                            </a>
-                        </div>                
-                    </div>
-                </div>
-                <div plan-name="business" plan-type="ecommerce" class="grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
-                    <div>
-                        <img src="https://resources.easystore.co/website/images/pricing/plan/dev/business.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-                        <span class="block md:hidden h2 mb-4 font-bold">多管道整合銷售</span>
-                        <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>2,599</strong>
-                        <b class="text-gray-500">/月</b>
-                        <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">4,999</s>
-                    </div>
-                    <div class="">
-                        <h2 class="hidden md:block mb-3">多管道整合銷售</h2>             
-                        <ul class="text-lg">
-                            <li class="mb-3 text-2xl font-bold">所有包含在<b>標準版</b>中的功能</li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-percentage"></use>
-                                </svg>
-                                無成交手續費
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-dollar"></use>
-                                          </svg>
-                                可開通 <b>10 個銷售管道</b>
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                會員分級與點數積分計劃
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                推薦分潤行銷
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                訊息群發中心
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                訊息統一管理
-                            </li>
-                            <li class="relative mb-1 md:mb-2 pl-6">
-                                <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                    <use xlink:href="#icon-check"></use>
-                                </svg>
-                                全溫層物流設定
-                            </li>
-                        </ul>
-                        <div class="mt-5 md:mt-7">
-                            <a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=us0203-r40c1-f0em-22ss&amp;trial_plan_id=6" class="btn btn-pink btn-xl mb-4">
-                            開始試用 
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ 
+    </body>
 
-        <style>
+    <style>
           .pricing-tabs-wrapper .tab-title.is-selected{
             color: #000;
             background-color: #fff;
@@ -214,9 +216,9 @@
             --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
             box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
           }
-        </style>
+    </style>
 
-        <script>
+    <script>
           var is_higer_plan = [4,5,6].some(number => number > 10);
           var default_plan = is_higer_plan ? 'growth' : 'standard';
           var url_string = window.location.href;
@@ -248,6 +250,4 @@
             document.querySelector('[plan-toggle="'+handle+'"] .label-sales').classList.remove('hidden');
             setParam(handle)
           }
-        </script>
-
-    </body>
+    </script>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services Section with HTML and CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+  body{
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #8B8ABB, #8AC59D);
+}
+img{
+  width: 60px;
+  height: 60px;
+}
+.container{
+  display: grid;
+
+}
+.container__box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+  gap: 15px;
+}
+.container .container__box .box{
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 5px 5px 6px #333;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: .2s, linear;
+}
+.container__heading{
+  text-align: center;
+  padding-bottom: 15px;
+  color: #e3e3e3;
+  text-shadow: 0 0 10px black;
+  font-size: 50px;
+  font-weight: 600;
+}
+.container .container__box .box h3{
+  color: #444;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container .container__box .box p{
+  font-size: 14px;
+  font-weight: 100;
+  color: #555;
+}
+.container .container__box .box a{
+  border-radius: 4px;
+  background:#444;
+  color: white;
+}
+.container .container__box .box a:hover{
+  background: #908080;
+}
+</style>
+<body>
+    <div class="container">
+        <h1 class="container__heading">Our Sevices</h1>
+        <div class="container__box">
+           <!-- HTML5 -->
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png?w=740&t=st=1677916471~exp=1677917071~hmac=827af8ac831a0bb7d0b81be0893374f854d05dd02adfaeffb66149b744d2cf97" alt="">
+                <h3>HTML5</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, soluta.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+           <!-- CSS3 -->
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png?w=740&t=st=1677916869~exp=1677917469~hmac=0543aa1335360aac66f18c8110ffbd21b085825c31d92ffa0e6ad7874027ccd9" alt="">
+                <h3>CSS3</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, soluta.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- JavaScript -->
+            <div class="box">
+                <img src="https://img.freepik.com/free-icon/javascript_318-698169.jpg?size=338&ext=jpg&uid=R95218254&ga=GA1.1.1791957629.1674016057&semt=sph" alt="">
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, soluta.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- SASS -->
+            <div class="box">
+                <img src="https://img.freepik.com/premium-vector/flat-design-saas-illustration_23-2149253476.jpg?size=338&ext=jpg&uid=R95218254&ga=GA1.1.1791957629.1674016057&semt=robertav1" alt="">
+                <h3>SASS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, soluta.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- JQuery -->
+            <div class="box">
+                <img src="https://img.freepik.com/free-icon/logogram_318-478558.jpg?size=338&ext=jpg&uid=R95218254&ga=GA1.1.1791957629.1674016057&semt=robertav1" alt="">
+                <h3>JQuery</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, soluta.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <!-- React.Js -->
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/168/168768.png?w=740&t=st=1677917581~exp=1677918181~hmac=f9748d6e8124b77e88a29622e14456e4a45ce2b0be2680ba3718f16935aeea1a" alt="">
+                <h3>React.Js</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, soluta.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
