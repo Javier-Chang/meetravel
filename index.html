@@ -98,6 +98,54 @@
 		</script>
 		
 		<link href="style/css/styles_11b.css" media="screen" rel="stylesheet" type="text/css">
+
+
+		<link rel="stylesheet" href="build/assets/app.f575e53c.css">
+
+		 <style>
+          .pricing-tabs-wrapper .tab-title.is-selected{
+            color: #000;
+            background-color: #fff;
+            border-radius: 0.7rem;
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          }
+    </style>
+
+    <script>
+          var is_higer_plan = [4,5,6].some(number => number > 10);
+          var default_plan = is_higer_plan ? 'growth' : 'standard';
+          var url_string = window.location.href;
+          var url = new URL(url_string);
+          var params = new URLSearchParams(url.search);
+          var search_params = params.get("plan");
+
+          displayPlan(search_params || default_plan)
+
+          document.querySelectorAll('[plan-toggle]').forEach(button => {
+            button.addEventListener('click',(el)=>{
+              displayPlan(el.target.getAttribute('plan-toggle'));
+            })
+          });
+          
+          function setParam(plan){
+            params.set("plan",plan)
+            url.search = params.toString();
+            var new_url = url.toString();
+            window.history.pushState({ path: new_url }, '', new_url);
+          }
+
+          function displayPlan(handle){
+            document.querySelectorAll('[plan-name]').forEach(container =>  container.classList.add('hidden'));
+            document.querySelectorAll('[plan-toggle]').forEach(container =>  container.classList.remove('is-selected'));
+            document.querySelectorAll('.label-sales').forEach(label => label.classList.add('hidden'));
+            document.querySelector('[plan-name="'+handle+'"]').classList.remove('hidden');
+            document.querySelector('[plan-toggle="'+handle+'"]').classList.add('is-selected');
+            document.querySelector('[plan-toggle="'+handle+'"] .label-sales').classList.remove('hidden');
+            setParam(handle)
+          }
+    </script>
 		
 		<style>body[_ngcontent-mqm-c68]{color:#2c1a0b;font-size:16px}@media screen and (max-width:640px){body[_ngcontent-mqm-c68]{font-size:14px}}h1[_ngcontent-mqm-c68]{font-size:24px}@media screen and (max-width:640px){h1[_ngcontent-mqm-c68]{font-size:16px}}h2[_ngcontent-mqm-c68]{font-size:20px}@media screen and (max-width:640px){h2[_ngcontent-mqm-c68]{font-size:16px}}h3[_ngcontent-mqm-c68]{font-size:18px}@media screen and (max-width:640px){h3[_ngcontent-mqm-c68]{font-size:16px}}p[_ngcontent-mqm-c68]{font-size:16px}@media screen and (max-width:640px){p[_ngcontent-mqm-c68]{font-size:14px}}h4[_ngcontent-mqm-c68]{font-size:16px}@media screen and (max-width:640px){h4[_ngcontent-mqm-c68]{font-size:12px}}h5[_ngcontent-mqm-c68]{font-size:14px}@media screen and (max-width:640px){h5[_ngcontent-mqm-c68]{font-size:12px}}h6[_ngcontent-mqm-c68]{font-size:12px}.bold[_ngcontent-mqm-c68]{font-weight:700}.container[_ngcontent-mqm-c68]{display:block;width:100%;max-width:1280px;margin:0 auto}.container.padding[_ngcontent-mqm-c68]{padding:2em 1em}hr[_ngcontent-mqm-c68]{width:100%;height:0;border:1px solid #ccc}hr.vl[_ngcontent-mqm-c68]{height:100%;max-width:0}hr.light[_ngcontent-mqm-c68]{border-color:#e6e6e6}.brown[_ngcontent-mqm-c68]{color:#2c1a0b}.brown.reverse[_ngcontent-mqm-c68]{color:#fff;background:#2c1a0b}.brown.border[_ngcontent-mqm-c68]{border:1px solid #2c1a0b}.orange[_ngcontent-mqm-c68]{color:#e18438}.orange.reverse[_ngcontent-mqm-c68]{color:#fff;background:#e18438}.orange.border[_ngcontent-mqm-c68]{border:1px solid #e18438}.yellow[_ngcontent-mqm-c68]{color:#ffa400}.yellow.reverse[_ngcontent-mqm-c68]{color:#fff;background:#ffa400}.yellow.border[_ngcontent-mqm-c68]{border:1px solid #ffa400}.red[_ngcontent-mqm-c68]{color:#e13838}.red.reverse[_ngcontent-mqm-c68]{color:#fff;background:#e13838}.red.border[_ngcontent-mqm-c68]{border:1px solid #e13838}.grey[_ngcontent-mqm-c68]{color:#666}.grey.reverse[_ngcontent-mqm-c68]{color:#fff;background:#666}.grey.border[_ngcontent-mqm-c68]{border:1px solid #666}.cover[_ngcontent-mqm-c68]{color:#fff;width:100%;height:100%;background:rgba(0,0,0,.5);transition:background .5s}.cover.card[_ngcontent-mqm-c68]{background:rgba(0,0,0,.2)}.cover.card[_ngcontent-mqm-c68]:hover{background:rgba(0,0,0,.5)}.shadow[_ngcontent-mqm-c68]{box-shadow:0 3px 6px rgba(0,0,0,.29)}.shadow.center[_ngcontent-mqm-c68]{box-shadow:0 0 6px rgba(0,0,0,.29)}.radius[_ngcontent-mqm-c68]{overflow:hidden;border-radius:2px}.radius.card[_ngcontent-mqm-c68]{border-radius:5px}.categories[_ngcontent-mqm-c68]{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:.5em 2em;position:-webkit-sticky;position:sticky;top:0;background:#fff;z-index:100}@media screen and (max-width:640px){.categories[_ngcontent-mqm-c68]{padding:.25em 0}}.categories[_ngcontent-mqm-c68]   a[_ngcontent-mqm-c68]{cursor:pointer;padding:.5em 1em;display:inline-block;position:relative}@media screen and (max-width:640px){.categories[_ngcontent-mqm-c68]   a[_ngcontent-mqm-c68]{padding:.25em .5em}}.categories[_ngcontent-mqm-c68]   a[_ngcontent-mqm-c68] + a[_ngcontent-mqm-c68]:before{content:"";display:block;width:1px;height:1em;background:#e6e6e6;position:absolute;left:0;top:50%;transform:translateY(-50%)}.main-title[_ngcontent-mqm-c68]{color:#2c1a0b;font-size:24px;display:flex;align-items:center;justify-content:center;width:calc(100% + 2em);margin:0 -1em 2em;text-align:center}@media screen and (max-width:640px){.main-title[_ngcontent-mqm-c68]{font-size:16px}}.main-title[_ngcontent-mqm-c68]:after, .main-title[_ngcontent-mqm-c68]:before{content:"";display:block;flex:1 1 auto;max-width:100px;min-width:1em;height:6px;margin:1em}@media screen and (max-width:640px){.main-title[_ngcontent-mqm-c68]:after, .main-title[_ngcontent-mqm-c68]:before{width:50px}}.main-title[_ngcontent-mqm-c68]:before{border-top:2px solid #2c1a0b;border-bottom:1px solid #2c1a0b}.main-title[_ngcontent-mqm-c68]:after{border-top:1px solid #2c1a0b;border-bottom:2px solid #2c1a0b}.sub[_ngcontent-mqm-c68]{display:inline-block;transform:scale(.65) translateY(-17.5%);transform-origin:center bottom}button.send[_ngcontent-mqm-c68]{display:block;margin:3em auto;padding:.75em 1em;min-width:8em;color:#fff;background:#e18438;border-radius:2px;box-shadow:0 3px 6px rgba(0,0,0,.29)}button.send[_ngcontent-mqm-c68]:disabled{background:#999}button.send.reverse[_ngcontent-mqm-c68]{color:#e18438;background:#fff;border:1px solid #e18438;box-shadow:none;transition:background .25s}button.send.reverse[_ngcontent-mqm-c68]:hover{background:rgba(225,132,56,.1)}button.send[_ngcontent-mqm-c68]   h2[_ngcontent-mqm-c68]{margin-bottom:0;justify-content:center;text-align:center}label.error[_ngcontent-mqm-c68]{box-shadow:0 0 3px 1px #e13838,0 0 3px 1px #e13838,0 0 3px 1px #e13838}[_nghost-mqm-c68]{height:100%;display:flex;flex-direction:column}.content[_ngcontent-mqm-c68]{flex:1 1 auto;overflow:auto;display:flex;flex-direction:column;overflow-x:hidden}.outlet[_ngcontent-mqm-c68]{min-height:100vh}
 		</style>
@@ -259,208 +307,204 @@
 				  </div>
 			</div>
 
-			<section id="section-836423251" class=" section-pricing-tabs relative py-10" data-section="pricing-tabs">
-
-				<div class="pricing-tabs-wrapper md:max-w-xl lg:max-w-6xl m-auto mt-6">
+			<div class="pricing-tabs-wrapper md:max-w-xl lg:max-w-6xl m-auto mt-6">
                     <div class="grid grid-cols-3 items-center text-center md:rounded-t-2xl bg-[#cbe2fa] shadow-inner p-3">
                         <div plan-toggle="lite" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
-                            <h4 class="mb-2 pointer-events-none">輕量版</h4>
-                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none hidden">年繳最低優惠</span>
+                            <h4 class="mb-2 pointer-events-none">瑞士</h4>
+                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none hidden">Meetravel is best</span>
                         </div>
                         <div plan-toggle="standard" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
-                            <h4 class="mb-2 pointer-events-none">標準版</h4>
-                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none hidden">年繳最低優惠</span>
+                            <h4 class="mb-2 pointer-events-none">日本</h4>
+                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none hidden">Meetravel is best</span>
                         </div>
                         <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected">
-                            <h4 class="mb-2 pointer-events-none">商務版</h4>
-                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none">年繳最低優惠</span>
+                            <h4 class="mb-2 pointer-events-none">國內</h4>
+                            <span class="label label-sales label-pink w-fit mx-auto pointer-events-none">Meetravel is best</span>
                         </div>
                     </div>
                     <div class="md:rounded-b-2xl py-6 md:py-10 bg-[#e0efff]">
-                      	<div plan-name="lite" plan-type="ecommerce" class="hidden grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
-	                        <div>
-		                        <img src="https://resources.easystore.co/website/images/pricing/plan/dev/lite.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-		                        <span class="block md:hidden h2 mb-4 font-bold">新手開店必備之選</span>
-		                        <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>399</strong>
-		                        <b class="text-gray-500">/月</b>
-		                        <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">799</s>
-	                        </div>
-	                        <div class="">
-	                            <h2 class="hidden md:block mb-3">新手開店必備之選</h2>
-	                            <ul class="text-lg">
-	                          	    <li class="mb-3 text-2xl font-bold">所包含的功能</li>
-	                                <li class="relative mb-1 md:mb-2 pl-6">
-			                            <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-			                                <use xlink:href="#icon-percentage"></use>
-			                            </svg>
-	                            		無成交手續費
-	                                </li>
-	                                <li class="relative mb-1 md:mb-2 pl-6">
-			                            <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-			                                 <use xlink:href="#icon-dollar"></use>
-			                            </svg>
-	                                    可開通 <b>2 個銷售管道</b>
-	                                </li>
-	                                <li class="relative mb-1 md:mb-2 pl-6">
-	                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-	                                         <use xlink:href="#icon-check"></use>
-	                                    </svg>
-	                            		3 步驟輕鬆架設品牌官網
-	                                </li>
-	                                <li class="relative mb-1 md:mb-2 pl-6">
-	                            		<svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-	                                         <use xlink:href="#icon-check"></use>
-	                                    </svg>
-	                                    社群電商經營（Facebook 、 Instagram &amp; LINE）
-	                                </li>
-	                                <li class="relative mb-1 md:mb-2 pl-6">
-	                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-	                                         <use xlink:href="#icon-check"></use>
-	                                    </svg>
-	                                   	折扣及優惠券
-	                                </li>
-	                                <li class="relative mb-1 md:mb-2 pl-6">
-	                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-	                                         <use xlink:href="#icon-check"></use>
-	                                    </svg>
-	                                    多元金物流選項
-	                                </li>
-	                                <li class="relative mb-1 md:mb-2 pl-6">
-	                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-	                                        <use xlink:href="#icon-check"></use>
-	                                    </svg>
-	                                    銷售分析報告
-	                                </li>
-	                            </ul>
-	                            <div class="mt-5 md:mt-7">
-	                              	<a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=it8643-r30c1-f0em-22te&amp;trial_plan_id=4" class="btn btn-pink  btn-xl  mb-4">
-	                            		開始試用 
-	                          		</a>
-	                            </div>
-	                        </div>
-                    	</div>
+                        <div plan-name="lite" plan-type="ecommerce" class="hidden grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
+                            <div>
+                                <img src="style\images\Meetravel_logo.png" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
+                                <span class="block md:hidden h2 mb-4 font-bold">Meetravel is best</span>
+                                <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>8,888</strong>
+                                <b class="text-gray-500">/月</b>
+                                <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">8,888</s>
+                            </div>
+                            <div class="">
+                                <h2 class="hidden md:block mb-3">Meetravel is best</h2>
+                                <ul class="text-lg">
+                                    <li class="mb-3 text-2xl font-bold">Meetravel is best</li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                            <use xlink:href="#icon-percentage"></use>
+                                        </svg>
+                                        Meetravel is best
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-dollar"></use>
+                                        </svg>
+                                        Meetravel is best <b>2 Meetravel is best</b>
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        3 Meetravel is best
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        Meetravel is best 、 Instagram &amp; LINE）
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        Meetravel is best
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                             <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        Meetravel is best
+                                    </li>
+                                    <li class="relative mb-1 md:mb-2 pl-6">
+                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                            <use xlink:href="#icon-check"></use>
+                                        </svg>
+                                        Meetravel is best
+                                    </li>
+                                </ul>
+                                <div class="mt-5 md:mt-7">
+                                    <a href="https://meetravel.tw/" class="btn btn-pink  btn-xl  mb-4">
+                                        Meetravel is best 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div plan-name="standard" plan-type="ecommerce" class="grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto hidden">
                         <div>
-                            <img src="https://resources.easystore.co/website/images/pricing/plan/dev/standard.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-                            <span class="block md:hidden h2 mb-4 font-bold">電商成長加速器</span>
-                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>1,299</strong>
+                            <img src="style\images\Meetravel_logo.png" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
+                            <span class="block md:hidden h2 mb-4 font-bold">Meetravel is best</span>
+                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>8,888</strong>
                             <b class="text-gray-500">/月</b>
-                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">2,499</s>
+                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">8,888</s>
                         </div>
                         <div class="">
-                            <h2 class="hidden md:block mb-3">電商成長加速器</h2>
+                            <h2 class="hidden md:block mb-3">Meetravel is best</h2>
                             <ul class="text-lg">
-                        		<li class="mb-3 text-2xl font-bold">所有包含在<b>輕量版</b>中的功能</li>
+                                <li class="mb-3 text-2xl font-bold">Meetravel is best<b>Meetravel is best</b>Meetravel is best</li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
-		                          	<svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-		                               <use xlink:href="#icon-percentage"></use>
-		                          	</svg>
-                                    無成交手續費
+                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
+                                       <use xlink:href="#icon-percentage"></use>
+                                    </svg>
+                                    Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-dollar"></use>
-                          			</svg>
-                                  	可開通 <b>5 個銷售管道</b>
+                                    </svg>
+                                    Meetravel is best <b>5 Meetravel is best</b>
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    IG、FB、LINE 直播 +1 收單
+                                    IG、FB、LINE Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    促銷優惠工具：贈品與加購
+                                    Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    蝦皮購物同步銷售
+                                    Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    部落格行銷
+                                    Meetravel is best
                                 </li>
                             </ul>
                             <div class="mt-5 md:mt-7">
-                                <a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=es-ab-22-std30&amp;trial_plan_id=5" class="btn btn-pink btn-xl mb-4">
-                            		開始試用 
-                          		</a>
+                                <a href="https://meetravel.tw/" class="btn btn-pink btn-xl mb-4">
+                                    Meetravel is best 
+                                </a>
                             </div>                
                         </div>
                     </div>
                     <div plan-name="business" plan-type="ecommerce" class="grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
                         <div>
-                            <img src="https://resources.easystore.co/website/images/pricing/plan/dev/business.jpg" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-                            <span class="block md:hidden h2 mb-4 font-bold">多管道整合銷售</span>
-                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>2,599</strong>
+                            <img src="style\images\Meetravel_logo.png" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
+                            <span class="block md:hidden h2 mb-4 font-bold">Meetravel is best</span>
+                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>8,888</strong>
                             <b class="text-gray-500">/月</b>
-                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">4,999</s>
+                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">8,888</s>
                         </div>
                         <div class="">
-                            <h2 class="hidden md:block mb-3">多管道整合銷售</h2>             
+                            <h2 class="hidden md:block mb-3">Meetravel is best</h2>             
                             <ul class="text-lg">
-                        		<li class="mb-3 text-2xl font-bold">所有包含在<b>標準版</b>中的功能</li>
+                                <li class="mb-3 text-2xl font-bold">Meetravel is best<b>Meetravel is best</b>Meetravel is best</li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-percentage"></use>
-                          			</svg>
-                                    無成交手續費
+                                    </svg>
+                                    Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-dollar"></use>
                                               </svg>
-                                    可開通 <b>10 個銷售管道</b>
+                                    Meetravel is best <b>10 Meetravel is best</b>
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    會員分級與點數積分計劃
+                                    Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    推薦分潤行銷
+                                    Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    訊息群發中心
+                                    Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    訊息統一管理
+                                    Meetravel is best
                                 </li>
                                 <li class="relative mb-1 md:mb-2 pl-6">
                                     <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
                                         <use xlink:href="#icon-check"></use>
                                     </svg>
-                                    全溫層物流設定
+                                    Meetravel is best
                                 </li>
                             </ul>
                             <div class="mt-5 md:mt-7">
-                                <a href="https://admin.easystore.co/signup?utm_source=g-ads&amp;utm_medium=mkt&amp;utm_campaign=campaign-pricing&amp;utm_term=campaign-pricing&amp;locale=zh_TW&amp;promo_code=us0203-r40c1-f0em-22ss&amp;trial_plan_id=6" class="btn btn-pink btn-xl mb-4">
-                            	開始試用 
-                          		</a>
+                                <a href="https://meetravel.tw/" class="btn btn-pink btn-xl mb-4">
+                                Meetravel is best 
+                                </a>
                             </div>
                         </div>
                     </div>
-          		</div>
-
-			</section>
+                </div>
 			
 			<!-- 網頁 底部 -->
 			<div _ngcontent-mqm-c68  _nghost-mqm-c67 >
