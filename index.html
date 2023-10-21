@@ -102,50 +102,110 @@
 
 		<link rel="stylesheet" href="build/assets/app.f575e53c.css">
 
-		 <style>
-          .pricing-tabs-wrapper .tab-title.is-selected{
-            color: #000;
-            background-color: #fff;
-            border-radius: 0.7rem;
-            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-          }
-    </style>
 
-    <script>
-          var is_higer_plan = [4,5,6].some(number => number > 10);
-          var default_plan = is_higer_plan ? 'growth' : 'standard';
-          var url_string = window.location.href;
-          var url = new URL(url_string);
-          var params = new URLSearchParams(url.search);
-          var search_params = params.get("plan");
 
-          displayPlan(search_params || default_plan)
+				 <style>
+		          .pricing-tabs-wrapper .tab-title.is-selected{
+		            color: #000;
+		            background-color: #fff;
+		            border-radius: 0.7rem;
+		            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+		            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+		            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+		          }
+		    </style>
 
-          document.querySelectorAll('[plan-toggle]').forEach(button => {
-            button.addEventListener('click',(el)=>{
-              displayPlan(el.target.getAttribute('plan-toggle'));
-            })
-          });
-          
-          function setParam(plan){
-            params.set("plan",plan)
-            url.search = params.toString();
-            var new_url = url.toString();
-            window.history.pushState({ path: new_url }, '', new_url);
-          }
 
-          function displayPlan(handle){
-            document.querySelectorAll('[plan-name]').forEach(container =>  container.classList.add('hidden'));
-            document.querySelectorAll('[plan-toggle]').forEach(container =>  container.classList.remove('is-selected'));
-            document.querySelectorAll('.label-sales').forEach(label => label.classList.add('hidden'));
-            document.querySelector('[plan-name="'+handle+'"]').classList.remove('hidden');
-            document.querySelector('[plan-toggle="'+handle+'"]').classList.add('is-selected');
-            document.querySelector('[plan-toggle="'+handle+'"] .label-sales').classList.remove('hidden');
-            setParam(handle)
-          }
-    </script>
+    		 <style >
+						section {
+						  height: 100%;
+						  width: 100%;
+						  display: grid;
+						  place-items: center;
+						  padding: 0;
+						  margin: 0;
+						  box-sizing: border-box;
+						  font-family: "Poppins", sans-serif;
+						}
+						.row-section {
+						  display: flex;
+						  flex-wrap: wrap;
+						}
+						.column-section {
+						  width: 100%;
+						  padding: 0 1em 1em 1em;
+						  text-align: center;
+						}
+						.card-section {
+						  width: 100%;
+						  height: 100%;
+						  padding: 2em 1.5em;
+						  background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+						  background-size: 100% 200%;
+						  background-position: 0 2.5%;
+						  border-radius: 5px;
+						  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+						  cursor: pointer;
+						  transition: 0.5s;
+						}
+						h3 {
+						  font-size: 20px;
+						  font-weight: 600;
+						  color: #1f194c;
+						  margin: 1em 0;
+						}
+						p {
+						  color: #575a7b;
+						  font-size: 15px;
+						  line-height: 1.6;
+						  letter-spacing: 0.03em;
+						}
+						.icon-wrapper {
+						  background-color: #2c7bfe;
+						  position: relative;
+						  margin: auto;
+						  font-size: 30px;
+						  height: 2.5em;
+						  width: 2.5em;
+						  color: #ffffff;
+						  border-radius: 50%;
+						  display: grid;
+						  place-items: center;
+						  transition: 0.5s;
+						}
+						.card-section:hover {
+						  background-position: 0 100%;
+						}
+						.card-section:hover .icon-wrapper {
+						  background-color: #ffffff;
+						  color: #2c7bfe;
+						}
+						.card-section:hover h3 {
+						  color: #ffffff;
+						}
+						.card-section:hover p {
+						  color: #f0f0f0;
+						}
+						@media screen and (min-width: 768px) {
+						  section {
+						    padding: 0 2em;
+						  }
+						  .column-section {
+						    flex: 0 50%;
+						    max-width: 50%;
+						  }
+						}
+						@media screen and (min-width: 992px) {
+						  section {
+						    padding: 1em 3em;
+						  }
+						  .column-section {
+						    flex: 0 0 33.33%;
+						    max-width: 33.33%;
+						  }
+						}
+				  </style>
+
 		
 		<style>body[_ngcontent-mqm-c68]{color:#2c1a0b;font-size:16px}@media screen and (max-width:640px){body[_ngcontent-mqm-c68]{font-size:14px}}h1[_ngcontent-mqm-c68]{font-size:24px}@media screen and (max-width:640px){h1[_ngcontent-mqm-c68]{font-size:16px}}h2[_ngcontent-mqm-c68]{font-size:20px}@media screen and (max-width:640px){h2[_ngcontent-mqm-c68]{font-size:16px}}h3[_ngcontent-mqm-c68]{font-size:18px}@media screen and (max-width:640px){h3[_ngcontent-mqm-c68]{font-size:16px}}p[_ngcontent-mqm-c68]{font-size:16px}@media screen and (max-width:640px){p[_ngcontent-mqm-c68]{font-size:14px}}h4[_ngcontent-mqm-c68]{font-size:16px}@media screen and (max-width:640px){h4[_ngcontent-mqm-c68]{font-size:12px}}h5[_ngcontent-mqm-c68]{font-size:14px}@media screen and (max-width:640px){h5[_ngcontent-mqm-c68]{font-size:12px}}h6[_ngcontent-mqm-c68]{font-size:12px}.bold[_ngcontent-mqm-c68]{font-weight:700}.container[_ngcontent-mqm-c68]{display:block;width:100%;max-width:1280px;margin:0 auto}.container.padding[_ngcontent-mqm-c68]{padding:2em 1em}hr[_ngcontent-mqm-c68]{width:100%;height:0;border:1px solid #ccc}hr.vl[_ngcontent-mqm-c68]{height:100%;max-width:0}hr.light[_ngcontent-mqm-c68]{border-color:#e6e6e6}.brown[_ngcontent-mqm-c68]{color:#2c1a0b}.brown.reverse[_ngcontent-mqm-c68]{color:#fff;background:#2c1a0b}.brown.border[_ngcontent-mqm-c68]{border:1px solid #2c1a0b}.orange[_ngcontent-mqm-c68]{color:#e18438}.orange.reverse[_ngcontent-mqm-c68]{color:#fff;background:#e18438}.orange.border[_ngcontent-mqm-c68]{border:1px solid #e18438}.yellow[_ngcontent-mqm-c68]{color:#ffa400}.yellow.reverse[_ngcontent-mqm-c68]{color:#fff;background:#ffa400}.yellow.border[_ngcontent-mqm-c68]{border:1px solid #ffa400}.red[_ngcontent-mqm-c68]{color:#e13838}.red.reverse[_ngcontent-mqm-c68]{color:#fff;background:#e13838}.red.border[_ngcontent-mqm-c68]{border:1px solid #e13838}.grey[_ngcontent-mqm-c68]{color:#666}.grey.reverse[_ngcontent-mqm-c68]{color:#fff;background:#666}.grey.border[_ngcontent-mqm-c68]{border:1px solid #666}.cover[_ngcontent-mqm-c68]{color:#fff;width:100%;height:100%;background:rgba(0,0,0,.5);transition:background .5s}.cover.card[_ngcontent-mqm-c68]{background:rgba(0,0,0,.2)}.cover.card[_ngcontent-mqm-c68]:hover{background:rgba(0,0,0,.5)}.shadow[_ngcontent-mqm-c68]{box-shadow:0 3px 6px rgba(0,0,0,.29)}.shadow.center[_ngcontent-mqm-c68]{box-shadow:0 0 6px rgba(0,0,0,.29)}.radius[_ngcontent-mqm-c68]{overflow:hidden;border-radius:2px}.radius.card[_ngcontent-mqm-c68]{border-radius:5px}.categories[_ngcontent-mqm-c68]{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:.5em 2em;position:-webkit-sticky;position:sticky;top:0;background:#fff;z-index:100}@media screen and (max-width:640px){.categories[_ngcontent-mqm-c68]{padding:.25em 0}}.categories[_ngcontent-mqm-c68]   a[_ngcontent-mqm-c68]{cursor:pointer;padding:.5em 1em;display:inline-block;position:relative}@media screen and (max-width:640px){.categories[_ngcontent-mqm-c68]   a[_ngcontent-mqm-c68]{padding:.25em .5em}}.categories[_ngcontent-mqm-c68]   a[_ngcontent-mqm-c68] + a[_ngcontent-mqm-c68]:before{content:"";display:block;width:1px;height:1em;background:#e6e6e6;position:absolute;left:0;top:50%;transform:translateY(-50%)}.main-title[_ngcontent-mqm-c68]{color:#2c1a0b;font-size:24px;display:flex;align-items:center;justify-content:center;width:calc(100% + 2em);margin:0 -1em 2em;text-align:center}@media screen and (max-width:640px){.main-title[_ngcontent-mqm-c68]{font-size:16px}}.main-title[_ngcontent-mqm-c68]:after, .main-title[_ngcontent-mqm-c68]:before{content:"";display:block;flex:1 1 auto;max-width:100px;min-width:1em;height:6px;margin:1em}@media screen and (max-width:640px){.main-title[_ngcontent-mqm-c68]:after, .main-title[_ngcontent-mqm-c68]:before{width:50px}}.main-title[_ngcontent-mqm-c68]:before{border-top:2px solid #2c1a0b;border-bottom:1px solid #2c1a0b}.main-title[_ngcontent-mqm-c68]:after{border-top:1px solid #2c1a0b;border-bottom:2px solid #2c1a0b}.sub[_ngcontent-mqm-c68]{display:inline-block;transform:scale(.65) translateY(-17.5%);transform-origin:center bottom}button.send[_ngcontent-mqm-c68]{display:block;margin:3em auto;padding:.75em 1em;min-width:8em;color:#fff;background:#e18438;border-radius:2px;box-shadow:0 3px 6px rgba(0,0,0,.29)}button.send[_ngcontent-mqm-c68]:disabled{background:#999}button.send.reverse[_ngcontent-mqm-c68]{color:#e18438;background:#fff;border:1px solid #e18438;box-shadow:none;transition:background .25s}button.send.reverse[_ngcontent-mqm-c68]:hover{background:rgba(225,132,56,.1)}button.send[_ngcontent-mqm-c68]   h2[_ngcontent-mqm-c68]{margin-bottom:0;justify-content:center;text-align:center}label.error[_ngcontent-mqm-c68]{box-shadow:0 0 3px 1px #e13838,0 0 3px 1px #e13838,0 0 3px 1px #e13838}[_nghost-mqm-c68]{height:100%;display:flex;flex-direction:column}.content[_ngcontent-mqm-c68]{flex:1 1 auto;overflow:auto;display:flex;flex-direction:column;overflow-x:hidden}.outlet[_ngcontent-mqm-c68]{min-height:100vh}
 		</style>
@@ -172,12 +232,7 @@
 				footer[_ngcontent-mqm-c80] {
 				    display: block;color: #fff;background: #2c1a0b;position:relative}.container[_ngcontent-mqm-c80]{padding:1em;flex-direction:column;justify-content:center;align-items:center;position:relative;z-index:1}.logo[_ngcontent-mqm-c80]{height:3em;margin:1.5em auto}@media screen and (max-width:640px){.logo[_ngcontent-mqm-c80]{height:2.5em;margin:3em auto 1em}}.icon[_ngcontent-mqm-c80]{margin-right:.5em}.icon.active[_ngcontent-mqm-c80]{display:none}.row[_ngcontent-mqm-c80]{width:100%;display:flex;justify-content:center;flex-wrap:wrap}@media screen and (max-width:640px){.row[_ngcontent-mqm-c80]{flex-direction:column}.row[_ngcontent-mqm-c80]   .column[_ngcontent-mqm-c80]{max-width:100%!important}}.column[_ngcontent-mqm-c80]{flex:1 1 auto;margin:1em 1em 0;max-width:20em}.column[_ngcontent-mqm-c80]:first-child{max-width:25em}.column[_ngcontent-mqm-c80]:last-child{max-width:10em}.column[_ngcontent-mqm-c80]:nth-child(3){max-width:6em}h3[_ngcontent-mqm-c80]{margin-bottom:1em}p[_ngcontent-mqm-c80]{display:flex;margin-bottom:.5em;white-space:nowrap}p.wrap[_ngcontent-mqm-c80]{white-space:normal}i[_ngcontent-mqm-c80]{position:relative;top:-3px}a[_ngcontent-mqm-c80], i[_ngcontent-mqm-c80], img[_ngcontent-mqm-c80]{margin-right:.5em}span[_ngcontent-mqm-c80]{flex:1 1 auto;display:block}.bg[_ngcontent-mqm-c80]{-o-object-fit:cover;object-fit:cover;width:100%;height:100%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:.1;pointer-events:none}h6[_ngcontent-mqm-c80]{text-align:center;padding:0 2.5rem;opacity:.7;margin-bottom:2em}.company[_ngcontent-mqm-c80]{margin-bottom:1em}.routers[_ngcontent-mqm-c80]   p[_ngcontent-mqm-c80]{cursor:pointer}.routers[_ngcontent-mqm-c80]   p[_ngcontent-mqm-c80]:hover{color:# e18438}.routers[_ngcontent-mqm-c80] p[_ngcontent-mqm-c80]: hover.icon[_ngcontent-mqm-c80] {display: none}.routers[_ngcontent-mqm-c80] p[_ngcontent-mqm-c80]: hover.icon.active[_ngcontent-mqm-c80] {display: block}.contact[_ngcontent-mqm-c80] p[_ngcontent-mqm-c80]:not(:last-child){cursor: pointer} 
 				</style>
-
-
-		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script> -->
-		<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		
 			
 	</head>
 	<body>	
@@ -185,30 +240,11 @@
 		<div id="app" class="wrap_top_bar">
 		
 			<div _ngcontent-mqm-c80 class="row">
-				<!--
-				<div _ngcontent-mqm-c80 class="column">
-
-					<div style="background-color:#424200;padding:10px; line-height:20px"></div>
-						
-					<div style="background-color:#e3c968;padding:10px;"></div>
-						
-					<div style="background-color:#FF5809;padding:10px;"></div>
-						
-					<div style="background-color:#CE0000;padding:10px;"></div>
-						
-					<div style="background-color:#613030;padding:10px;"></div>
-						
-
-				</div>
-				-->
+	
 				<div>
 					
 					<div class="function-bar">
-						<!-- <ul class="language">
-							<li><a href="#">繁中</a></li>
-							<li><a href="#">簡中</a></li>
-							<li><a href="#">English</a></li>
-						</ul> -->
+					
 					</div>
 
 					<!-- 標題 Logo -->
@@ -221,9 +257,6 @@
 							</a>
 						</div>
 					</div>
-					<!--首頁 slider 區塊（圖片文字浮水印尚未完成） start-->
-					
-					<!--首頁 slider 區塊（圖片文字浮水印尚未完成） end-->
 					<!--旅程分類 start-->
 						
 					<div class="itinerary-type">
@@ -251,25 +284,6 @@
 							<div class="name">遇見小品</div> 
 						</a>
 
-						<!--
-						<a class="type-item " href="index.html">
-						 
-							<img class="icon" src="style/html/photo/category/icon/7.svg">
-							<div class="name">遊學行程</div> 
-						</a>
-
-						<a class="type-item " href="index.html">
-						 
-							<img class="icon" src="style/html/photo/category/icon/8.svg">
-							<div class="name">講座資訊</div> 
-						</a>
-
-						<a class="type-item " href="index.html">
-						 
-							<img class="icon" src="style/html/photo/category/icon/9.svg">
-							<div class="name">私人訂製</div> 
-						</a>
-						-->
 					</div>
 					<!--旅程分類 end-->
 
@@ -277,35 +291,9 @@
 				
 			</div>
 			
-			<!--
-			<div style="background-color:pink;border:2px orange solid;padding:15px;">
-				<p>{{ message }} &nbsp;&nbsp; {{BloodPressureInfo}}</p>
-			</div>
-			<br/>
-			<div style="background-color:#b82339;border:2px solid;padding:40px;color:white;font-size: 30px;">3-1 #b82339</div>
-			<br/>
-			<div style="background-color:#ba2b2b;border:2px solid;padding:40px;color:white;font-size: 30px;">3-2 #ba2b2b</div>
-			<br/>
-			-->
+	
 
 			<!-- 形成區塊 -->
-
-			<div _nghost-mqm-c68  ng-version="9.1.7">
-			  <div _ngcontent-mqm-c68  id="scroller" class="content">
-				<div _ngcontent-mqm-c68>
-				  <div _nghost-mqm-c62    >
-					
-					<!-- <button id="success2" class="button" style="width:120px;height:40px;border:3px orange double;"> Success </button> -->
-					
-					<div _ngcontent-mqm-c62  class="container_content ng-star-inserted">
-
-
-						
-					
-					</div>
-					<img _ngcontent-mqm-c62  alt  class="separater ng-star-inserted" src="style/images/1687700359140.jpg">
-				  </div>
-			</div>
 
 			<div class="pricing-tabs-wrapper md:max-w-xl lg:max-w-6xl m-auto mt-6">
                     <div class="grid grid-cols-3 items-center text-center md:rounded-t-2xl bg-[#cbe2fa] shadow-inner p-3">
@@ -323,189 +311,254 @@
                         </div>
                     </div>
                     <div class="md:rounded-b-2xl py-6 md:py-10 bg-[#e0efff]">
-                        <div plan-name="lite" plan-type="ecommerce" class="hidden grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
-                            <div>
-                                <img src="style\images\Meetravel_logo.png" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-                                <span class="block md:hidden h2 mb-4 font-bold">Meetravel is best</span>
-                                <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>8,888</strong>
-                                <b class="text-gray-500">/月</b>
-                                <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">8,888</s>
-                            </div>
-                            <div class="">
-                                <h2 class="hidden md:block mb-3">Meetravel is best</h2>
-                                <ul class="text-lg">
-                                    <li class="mb-3 text-2xl font-bold">Meetravel is best</li>
-                                    <li class="relative mb-1 md:mb-2 pl-6">
-                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                            <use xlink:href="#icon-percentage"></use>
-                                        </svg>
-                                        Meetravel is best
-                                    </li>
-                                    <li class="relative mb-1 md:mb-2 pl-6">
-                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                             <use xlink:href="#icon-dollar"></use>
-                                        </svg>
-                                        Meetravel is best <b>2 Meetravel is best</b>
-                                    </li>
-                                    <li class="relative mb-1 md:mb-2 pl-6">
-                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                             <use xlink:href="#icon-check"></use>
-                                        </svg>
-                                        3 Meetravel is best
-                                    </li>
-                                    <li class="relative mb-1 md:mb-2 pl-6">
-                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                             <use xlink:href="#icon-check"></use>
-                                        </svg>
-                                        Meetravel is best 、 Instagram &amp; LINE）
-                                    </li>
-                                    <li class="relative mb-1 md:mb-2 pl-6">
-                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                             <use xlink:href="#icon-check"></use>
-                                        </svg>
-                                        Meetravel is best
-                                    </li>
-                                    <li class="relative mb-1 md:mb-2 pl-6">
-                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                             <use xlink:href="#icon-check"></use>
-                                        </svg>
-                                        Meetravel is best
-                                    </li>
-                                    <li class="relative mb-1 md:mb-2 pl-6">
-                                        <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                            <use xlink:href="#icon-check"></use>
-                                        </svg>
-                                        Meetravel is best
-                                    </li>
-                                </ul>
-                                <div class="mt-5 md:mt-7">
-                                    <a href="https://meetravel.tw/" class="btn btn-pink  btn-xl  mb-4">
-                                        Meetravel is best 
-                                    </a>
-                                </div>
-                            </div>
+                        <div plan-name="lite" plan-type="ecommerce" class="hidden grid  gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
+                               <section>
+														      <div class="row-section">
+														        <h2 class="section-heading">Our Services</h2>
+														      </div>
+														      <div class="row-section">
+														        <div class="column-section">
+														          <div class="card-section">
+														            <div class="icon-wrapper">
+														              <i class="fas fa-hammer"></i>
+														            </div>
+														            <h3>Service Heading</h3>
+														            <p>
+														              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+														              consequatur necessitatibus eaque.
+														            </p>
+														          </div>
+														        </div>
+														        <div class="column-section">
+														          <div class="card-section">
+														            <div class="icon-wrapper">
+														              <i class="fas fa-brush"></i>
+														            </div>
+														            <h3>Service Heading</h3>
+														            <p>
+														              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+														              consequatur necessitatibus eaque.
+														            </p>
+														          </div>
+														        </div>
+														        <div class="column-section">
+														          <div class="card-section">
+														            <div class="icon-wrapper">
+														              <i class="fas fa-wrench"></i>
+														            </div>
+														            <h3>Service Heading</h3>
+														            <p>
+														              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+														              consequatur necessitatibus eaque.
+														            </p>
+														          </div>
+														        </div>
+														        <div class="column-section">
+														          <div class="card-section">
+														            <div class="icon-wrapper">
+														              <i class="fas fa-truck-pickup"></i>
+														            </div>
+														            <h3>Service Heading</h3>
+														            <p>
+														              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+														              consequatur necessitatibus eaque.
+														            </p>
+														          </div>
+														        </div>
+														        <div class="column-section">
+														          <div class="card-section">
+														            <div class="icon-wrapper">
+														              <i class="fas fa-broom"></i>
+														            </div>
+														            <h3>Service Heading</h3>
+														            <p>
+														              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+														              consequatur necessitatibus eaque.
+														            </p>
+														          </div>
+														        </div>
+														        <div class="column-section">
+														          <div class="card-section">
+														            <div class="icon-wrapper">
+														              <i class="fas fa-plug"></i>
+														            </div>
+														            <h3>Service Heading</h3>
+														            <p>
+														              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+														              consequatur necessitatibus eaque.
+														            </p>
+														          </div>
+														        </div>
+														      </div>
+														    </section>
                         </div>
                     </div>
-                    <div plan-name="standard" plan-type="ecommerce" class="grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto hidden">
-                        <div>
-                            <img src="style\images\Meetravel_logo.png" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-                            <span class="block md:hidden h2 mb-4 font-bold">Meetravel is best</span>
-                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>8,888</strong>
-                            <b class="text-gray-500">/月</b>
-                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">8,888</s>
-                        </div>
-                        <div class="">
-                            <h2 class="hidden md:block mb-3">Meetravel is best</h2>
-                            <ul class="text-lg">
-                                <li class="mb-3 text-2xl font-bold">Meetravel is best<b>Meetravel is best</b>Meetravel is best</li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                       <use xlink:href="#icon-percentage"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-dollar"></use>
-                                    </svg>
-                                    Meetravel is best <b>5 Meetravel is best</b>
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    IG、FB、LINE Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                            </ul>
-                            <div class="mt-5 md:mt-7">
-                                <a href="https://meetravel.tw/" class="btn btn-pink btn-xl mb-4">
-                                    Meetravel is best 
-                                </a>
-                            </div>                
-                        </div>
-                    </div>
-                    <div plan-name="business" plan-type="ecommerce" class="grid lg:grid-cols-2 gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
-                        <div>
-                            <img src="style\images\Meetravel_logo.png" alt="EasyStore" class="md:max-w-xs rounded-xl mb-6">
-                            <span class="block md:hidden h2 mb-4 font-bold">Meetravel is best</span>
-                            <strong class="text-7xl mb-1 leading-none text-blue inline"><small class="text-2xl mr-1">NT</small>8,888</strong>
-                            <b class="text-gray-500">/月</b>
-                            <s class="text-5xl font-bold text-gray-300 decoration-2 mt-3 ml-0 md:ml-2 block md:inline-block">8,888</s>
-                        </div>
-                        <div class="">
-                            <h2 class="hidden md:block mb-3">Meetravel is best</h2>             
-                            <ul class="text-lg">
-                                <li class="mb-3 text-2xl font-bold">Meetravel is best<b>Meetravel is best</b>Meetravel is best</li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-percentage"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-dollar"></use>
-                                              </svg>
-                                    Meetravel is best <b>10 Meetravel is best</b>
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                                <li class="relative mb-1 md:mb-2 pl-6">
-                                    <svg class="absolute left-0 top-[0.5em] icon-text mr-1 text-xs text-blue">
-                                        <use xlink:href="#icon-check"></use>
-                                    </svg>
-                                    Meetravel is best
-                                </li>
-                            </ul>
-                            <div class="mt-5 md:mt-7">
-                                <a href="https://meetravel.tw/" class="btn btn-pink btn-xl mb-4">
-                                Meetravel is best 
-                                </a>
-                            </div>
-                        </div>
+                    <div plan-name="standard" plan-type="ecommerce" class="grid  gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto hidden">
+                        <section>
+												      <div class="row-section">
+												        <h2 class="section-heading">Our Services</h2>
+												      </div>
+												      <div class="row-section">
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-hammer"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-brush"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-wrench"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-truck-pickup"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-broom"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-plug"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												      </div>
+												    </section>
+                </div>
+                <div plan-name="business" plan-type="ecommerce" class="grid  gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto">
+                    <section>
+												      <div class="row-section">
+												        <h2 class="section-heading">Our Services</h2>
+												      </div>
+												      <div class="row-section">
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-hammer"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-brush"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-wrench"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-truck-pickup"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-broom"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												        <div class="column-section">
+												          <div class="card-section">
+												            <div class="icon-wrapper">
+												              <i class="fas fa-plug"></i>
+												            </div>
+												            <h3>Service Heading</h3>
+												            <p>
+												              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+												              consequatur necessitatibus eaque.
+												            </p>
+												          </div>
+												        </div>
+												      </div>
+												    </section>
                     </div>
                 </div>
 			
+      <img _ngcontent-mqm-c62  alt  class="separater ng-star-inserted" src="style/images/1687700359140.jpg">
+
 			<!-- 網頁 底部 -->
 			<div _ngcontent-mqm-c68  _nghost-mqm-c67 >
 			  <footer _ngcontent-mqm-c67 >
@@ -582,19 +635,11 @@
 						<a _ngcontent-mqm-c67  target="_blank" href="https://www.facebook.com/profile.php?id=100091627727486&mibextid=ZbWKwL">
 						  <img _ngcontent-mqm-c67  src="https://letstravel.com.tw/assets/facebook.svg" alt="facebook">
 						</a>
-						<!--
-						<a _ngcontent-mqm-c67  target="_blank" href="https://www.instagram.com/letstravel_taipei/">
-						  <img _ngcontent-mqm-c67  src="https://letstravel.com.tw/assets/instagram.svg" alt="instagram">
-						</a>
-						<a _ngcontent-mqm-c67  target="_blank" href="https://line.me/R/ti/p/@rrf2890h">
-						  <img _ngcontent-mqm-c67  src="https://letstravel.com.tw/assets/line.svg" alt="line">
-						</a>
-						-->
+					
 					  </p>
 					</li>
 
 				  </ul>
-				  <!--<img _ngcontent-mqm-c67  alt="遇見旅遊" routerlink  class="logo" tabindex="0" src="">-->
 				  <h6 _ngcontent-mqm-c67 >©2023 遇見旅遊 MeeTravel - 著作權所有 - 甲種旅行業</h6>
 				</div>
 			  </footer>
@@ -605,167 +650,6 @@
 	
 		</div>
 
-
-		<script>
-			
-			var BloodPressureInfoAPP = new Vue({
-				el: '#app',
-				data: {
-					BloodPressureInfo:'',
-					message: 'Hello Vue.js!'
-				 },
-
-				 created: function () {
-					axios.get("https://sheets.googleapis.com/v4/spreadsheets/1elUP_wzWuSjEEMSDiMGsj2WsXitdNYTDRDI7jOJbp7A/values/Table_1!A2?key=AIzaSyB5smMxWZln139LNtT1gFpqoVuLskofP-E").then(response => {
-						this.$data.BloodPressureInfo = response.data.values[0][0];
-						console.log(response.data.values[0][0]);
-					}).catch(error => {
-
-					});
-				}
-			});
-			
-			
-		</script>
-		
-		<script src="style/js/slideshow_custom_2.js"></script>
-		
-		<!-- SweetAlert2 -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
-
-		<script>
-			 let btn = document.getElementById("Nara_2");
-			if (btn) {
-			 btn.addEventListener("click", success__fn, false);
-			}
-			
-			
-
-			function success__fn() {
-				var str="★ 用當令煲湯喚醒每一天      \n"+
-						"★ 從在地市場及食材認識古都   \n"+
-						"★ 體驗貴族般的嵐山散策      \n"+
-						"★ 在最美神社結下最好的緣分   \n"+
-						"★ 徜徉深野秘境接受文化洗禮   \n"+
-						"★ 在第一名湯釋放身心壓力     \n"+
-						"                                    <h2>NT$ 168,000.-</h2>";
-
-				swal({
-					imageUrl: "https://letstravel.com.tw/_/assets/m2p6vgr9uo00ow04?key=directus-large-crop&quot",
-					imageWidth: 800,
-					imageHeight: 350,
-					<!-- animation: false, -->
-					imageAlt: 'Custom image',
-					width: 700,
-					padding: 30,
-					title: '行程亮點',
-					html: '<pre>' + str + '</pre>',
-					showCloseButton: true,
-					confirmButtonColor: '#3085d6',
-					confirmButtonText: '詳細行程',
-					confirmButtonClass: 'btn btn-success',
-					buttonsStyling: true
-				}).then(function(isConfirm) {
-				  if (JSON.stringify(isConfirm.value)) {
-					window.location.href = "TI_Nara_2.html";
-					<!-- window.open(' https://docs.google.com/forms/d/e/1FAIpQLScAe0TTn_W1s1kvmoaBoTUCuOof6sjiH1WJDplzHhiN_kVx6w/viewform ', '遇見旅遊-報名', ); -->
-				  } 
-				  else if (!JSON.stringify(isConfirm.value)) {
-				  } 
-				  else {
-					//alert(JSON.stringify(isConfirm.value))
-					// Esc, close button or outside click
-					// isConfirm is undefined
-				  }
-				});
-			}
-
-
-
-			function success__fn1() {
-				swal({
-					title: "您确定要修改密码吗",
-					text: "修改后，请使用新密码登陆！",
-					type: "warning",
-					showCloseButton: true,
-					showCancelButton: true,
-					confirmButtonColor: "#DD6B55",
-					confirmButtonText: "修改",
-					cancelButtonText: "取消",
-					closeOnConfirm: false
-				}).then(function() {
-					swal({
-						title: "修改成功！",
-						text: "请使用新密码登陆。",
-						type: "success",
-						confirmButtonText: "重新登陆",
-					}).then(function(isConfirm) {
-						window.location.href = "https://sweetalert2.github.io/#configuration"
-					})
-				});
-			}
-
-
-			function success__fn2() {
-				swal({
-					title: "呵！",
-					text: "圖:SPY x FAMILY官方推特",
-					imageUrl: "https://i.imgur.com/1BMhKOB.jpg",
-					imageWidth: 540,
-					imageHeight: 303,
-					imageAlt: "Custom image",
-					animation: true
-				});
-			}
-			
-
-			function success__fn3() {
-				swal({
-				  title: 'Are you sure?',
-				  text: "You won't be able to revert this!",
-				  type: 'warning',
-				  showCancelButton: true,
-				  confirmButtonColor: '#3085d6',
-				  cancelButtonColor: '#d33',
-				  confirmButtonText: 'Yes, delete it!',
-				  cancelButtonText: 'No, cancel!',
-				  confirmButtonClass: 'btn btn-success',
-				  cancelButtonClass: 'btn btn-danger',
-				  buttonsStyling: true
-				}).then(function(isConfirm) {
-				  if (JSON.stringify(isConfirm.value)) {
-					swal(
-					  'Deleted!',
-					  'Your file has been deleted.',
-					  'success'
-					);
-				  } 
-				  else if (!JSON.stringify(isConfirm.value)) {
-					swal(
-					  'Cancelled',
-					  'Your imaginary file is safe :)',
-					  'error'
-					);
-				  } 
-				  else {
-					//alert(JSON.stringify(isConfirm.value))
-					// Esc, close button or outside click
-					// isConfirm is undefined
-				  }
-				});
-			}
-		</script>
-
-		<style>
-			.pricing-tabs-wrapper .tab-title.is-selected{
-			    color: #000;
-			    background-color: #fff;
-			    border-radius: 0.7rem;
-			    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-			    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-			    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-			  }
-		</style>
 
 		<script>
 			  var is_higer_plan = [4,5,6].some(number => number > 10);
