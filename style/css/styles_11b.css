@@ -2881,6 +2881,16 @@ body {
     -webkit-font-smoothing: subpixel-antialiased
 }
 
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+.font-yen{
+    font-weight:100;
+    font-size: 50px;
+    font-family:'cwTeXYen', sans-serif;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    font-smooth: always;
+}
+
 * {
     outline: 0;
     border: 0;

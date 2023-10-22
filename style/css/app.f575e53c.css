@@ -1650,12 +1650,12 @@ html[lang=zh-my] .kicker,html[lang=zh-tw] .kicker,html[lang=zh-hk] .kicker {
 
 .bg-\[\#e0efff\] {
     --tw-bg-opacity: 1;
-    background-color: rgb(224 239 255 / var(--tw-bg-opacity))
+    background-color: #e4ca235c
 }
 
 .bg-\[\#cbe2fa\] {
     --tw-bg-opacity: 1;
-    background-color: rgb(203 226 250 / var(--tw-bg-opacity))
+    background-color: #a23b0afa
 }
 
 .bg-pink {
@@ -2216,7 +2216,7 @@ html[lang=zh-my] .kicker,html[lang=zh-tw] .kicker,html[lang=zh-hk] .kicker {
 }
 
 .text-blue-dark {
-    color: var(--color-primary-dark)
+    color: #fff
 }
 
 .text-gray-200 {
@@ -3234,8 +3234,8 @@ buttons-toggle [data-toggle-trigger]+*.is-opened {
     border-radius: 9999px;
     background-color: var(--color-black);
     text-align: center;
-    font-size: .78em;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 400;
     line-height: 1;
     color: var(--color-white)
 }
@@ -3249,7 +3249,7 @@ header.label .site-nav>li,header.label .lg\:hidden .icon-text {
 }
 
 .label.label-pink {
-    background-color: var(--color-pink)
+    background-color: #a23b0afa
 }
 
 .label.label-gray {
@@ -4446,8 +4446,8 @@ select {
 
 
 .pricing-tabs-wrapper .tab-title.is-selected{
-    color: #000;
-    background-color: #fff;
+    color: #100b0b;
+    background-color: #d0d48285;
     border-radius: 0.7rem;
     --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -4477,7 +4477,7 @@ section {
   width: 100%;
   height: 100%;
   padding: 2em 1.5em;
-  background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+  background: linear-gradient(#ffffff 50%, #54b4e4 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
   border-radius: 5px;
