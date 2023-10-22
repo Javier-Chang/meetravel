@@ -4253,7 +4253,7 @@ select {
     }
 
     .lg\:max-w-6xl {
-        max-width: 72rem
+        max-width: 100%
     }
 
     .lg\:max-w-4xl {
