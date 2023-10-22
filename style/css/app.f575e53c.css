@@ -400,13 +400,13 @@ html[lang=zh-my] h5,html[lang=zh-my] .h5,html[lang=zh-tw] h5,html[lang=zh-tw] .h
     }
 }
 
-html[lang=zh-my] h6,html[lang=zh-my] .h6,html[lang=zh-tw] h6,html[lang=zh-tw] .h6,html[lang=zh-hk] h6,html[lang=zh-hk] .h6 {
+html[lang=zh-my] h6[_section],html[lang=zh-my] .h6,html[lang=zh-tw] h6[_section],html[lang=zh-tw] .h6,html[lang=zh-hk] h6,html[lang=zh-hk] .h6 {
     font-size: 1.125rem;
     line-height: 1.75rem
 }
 
 @media (min-width: 998px) {
-    html[lang=zh-my] h6,html[lang=zh-my] .h6,html[lang=zh-tw] h6,html[lang=zh-tw] .h6,html[lang=zh-hk] h6,html[lang=zh-hk] .h6 {
+    html[lang=zh-my] h6[_section],html[lang=zh-my] .h6,html[lang=zh-tw] h6[_section],html[lang=zh-tw] .h6,html[lang=zh-hk] h6,html[lang=zh-hk] .h6 {
         font-size:1.25rem;
         line-height: 1.75rem
     }
