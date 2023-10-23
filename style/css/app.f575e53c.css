@@ -3237,7 +3237,8 @@ buttons-toggle [data-toggle-trigger]+*.is-opened {
     font-size: 1em;
     font-weight: 400;
     line-height: 1;
-    color: var(--color-white)
+    color: var(--color-white);
+    font-size: medium;
 }
 
 header.label .site-nav>li,header.label .lg\:hidden .icon-text {
