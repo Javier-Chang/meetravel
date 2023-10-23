@@ -3238,7 +3238,6 @@ buttons-toggle [data-toggle-trigger]+*.is-opened {
     font-weight: 400;
     line-height: 1;
     color: var(--color-white);
-    font-size: medium;
 }
 
 header.label .site-nav>li,header.label .lg\:hidden .icon-text {
@@ -3249,8 +3248,10 @@ header.label .site-nav>li,header.label .lg\:hidden .icon-text {
     padding: .3em .65em
 }
 
-.label.label-pink {
-    background-color: #a23b0afa
+.label.label-section {
+    background-color: #a23b0afa;
+    font-size: larger;
+    font-family: 'Bradley Hand', cursive;
 }
 
 .label.label-gray {
