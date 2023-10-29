@@ -275,11 +275,27 @@ h3,.h3 {
         font-size:2.25rem;
         line-height: 2.5rem
     }
+    h3.section-first {
+        font-size:2.25rem;
+        line-height: 4.5rem
+    }
 }
 
 h3,.h3 {
-    letter-spacing: -.3px
+    letter-spacing: -.3px;
+    text-align:center;
 }
+
+
+h3.section-first {
+    letter-spacing: 1.3px
+}
+
+p.section-first {
+    text-align:center;
+}
+
+
 
 h4,.h4 {
     font-size: 1.5rem;
@@ -4475,6 +4491,11 @@ section {
   padding: 0 1em 1em 1em;
   text-align: center;
 }
+.column-section-first {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
 .card-section {
   width: 100%;
   height: 100%;
@@ -4533,6 +4554,10 @@ p[_section] {
     flex: 0 50%;
     max-width: 50%;
   }
+  .column-section-first {
+    flex: 0 50%;
+    max-width: 50%;
+  }
 }
 @media screen and (min-width: 992px) {
   section {
@@ -4541,6 +4566,10 @@ p[_section] {
   .column-section {
     flex: 0 0 33.33%;
     max-width: 33.33%;
+  }
+  .column-section-first {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
