@@ -1801,6 +1801,11 @@ html[lang=zh-my] .kicker,html[lang=zh-tw] .kicker,html[lang=zh-hk] .kicker {
     padding-right: 2rem
 }
 
+.px-8-first {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem
+}
+
 .px-2 {
     padding-left: .5rem;
     padding-right: .5rem
@@ -3260,7 +3265,7 @@ header.label .site-nav>li,header.label .lg\:hidden .icon-text {
 }
 
 .label {
-    padding: .3em .65em
+    padding: .3em .4em
 }
 
 .label.label-section {
@@ -4500,7 +4505,6 @@ section {
 }
 .column-section-first {
   width: 100%;
-  padding: 0 1em 1em 1em;
   text-align: center;
 }
 .card-section {
