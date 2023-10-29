@@ -101,7 +101,9 @@
 	
 	</head>
 	<body>	
-		<img  alt  class="separater ng-star-inserted" src="style/images/遇見web_logo.jpg">
+		<a href="index.html">
+			<img  alt  class="separater ng-star-inserted" src="style/images/遇見web_logo.jpg">
+		</a>
 		<div id="app" class="wrap_top_bar">
 			<div _ngcontent-mqm-c80 class="row">
 				<div>		
@@ -152,7 +154,7 @@
 
 			<div class="pricing-tabs-wrapper md:max-w-xl lg:max-w-6xl m-auto mt-6">
                     <div class="grid grid-cols-3 items-center text-center md:rounded-t-2xl bg-[#cbe2fa] shadow-inner p-3">
-                        <div plan-toggle="lite" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
+                        <div plan-toggle="lite" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected">
                             <h3 style="font-weight:400" class="mb-2 pointer-events-none">瑞士</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none hidden">Switzerland</span>
                         </div>
@@ -160,26 +162,26 @@
                             <h3 style="font-weight:400" class="mb-2 pointer-events-none">日本</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none hidden">Japan</span>
                         </div>
-                        <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected">
+                        <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
                             <h3 style="font-weight:400" class="mb-2 pointer-events-none">台灣</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none">Taiwan</span>
                         </div>
                     </div>
-                    <div class="md:rounded-b-2xl py-6 md:py-10 bg-[#e0efff]">
+                    <div class="md:rounded-b-2xl py-6 md:py-10-change bg-[#e0efff]">
 
-                        <div plan-name="lite" plan-type="ecommerce" class="grid  gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl m-auto hidden">
-                            <section>
+                        <div plan-name="lite" plan-type="ecommerce" class="grid gap-5 py-6 px-8 md:px-4 md:max-w-xl lg:max-w-5xl-first m-auto hidden">
+                            <section class="section-first">
 						      	<div class="row-section">
 							        <div class="column-section-first">
-							          	<div class="card-section">
-							            	<div>
-							              		<img  alt  class="separater ng-star-inserted" src="style/images/金色馬特洪峰-原圖.png">
-							            	</div>
-							            	<h3 class="_section section-first">ㄧ生只需要去一次的雋永瑞士</h3>
-							            	<p class="_section section-first">
-							              		2024/6/25 出發，13天。預訂請進。
-							            	</p>
-							          	</div>
+							        	<a href="index.html">
+							        		<div class="card-section-first">
+								              	<img  alt src="style/images/金色馬特洪峰-原圖.png">
+								            	<h3 class="_section section-first">ㄧ生只需要去一次的雋永瑞士</h3>
+								            	<p class="_section section-first">
+								              		2024/6/25 出發，13天。預訂請進。
+								            	</p>
+								          	</div>
+							        	</a>
 						        	</div>
 					      		</div>
 						    </section>
@@ -450,7 +452,7 @@
 
 		<script>
 			  var is_higer_plan = [4,5,6].some(number => number > 10);
-			  var default_plan = is_higer_plan ? 'growth' : 'standard';
+			  var default_plan = is_higer_plan ? 'growth' : 'lite';
 			  var url_string = window.location.href;
 			  var url = new URL(url_string);
 			  var params = new URLSearchParams(url.search);

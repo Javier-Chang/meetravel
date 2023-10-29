@@ -202,7 +202,7 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 1rem
 }
 
-h1:last-child,h2:last-child,h3:last-child,h4:last-child,h5:last-child,h6:last-child,p:last-child {
+h1:last-child,h2:last-child,h3:last-child,h4:last-child,h5:last-child,h6:last-child {
     margin-bottom: 0
 }
 
@@ -283,7 +283,6 @@ h3,.h3 {
 
 h3,.h3 {
     letter-spacing: -.3px;
-    text-align:center;
 }
 
 
@@ -4066,6 +4065,10 @@ select {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem
     }
+    .md\:py-10-change {
+        padding-top: 0rem;
+        padding-bottom: 0rem
+    }
 
     .md\:px-4 {
         padding-left: 1rem;
@@ -4302,6 +4305,10 @@ select {
         max-width: 64rem
     }
 
+    .lg\:max-w-5xl-first {
+        max-width: -webkit-fill-available
+    }
+
     .lg\:max-w-\[300px\] {
         max-width: 300px
     }
@@ -4508,6 +4515,17 @@ section {
   cursor: pointer;
   transition: 0.5s;
 }
+.card-section-first {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f2702f 50%, #54b4e4 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
 h3[_section] {
   font-size: 20px;
   font-weight: 600;
@@ -4536,7 +4554,14 @@ p[_section] {
 .card-section:hover {
   background-position: 0 100%;
 }
+.card-section-first:hover {
+  background-position: 0 100%;
+}
 .card-section:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #2c7bfe;
+}
+.card-section-first:hover .icon-wrapper {
   background-color: #ffffff;
   color: #2c7bfe;
 }
@@ -4550,6 +4575,9 @@ p[_section] {
   section {
     padding: 0 2em;
   }
+  section.section-first {
+    padding: 0 0em;
+  }
   .column-section {
     flex: 0 50%;
     max-width: 50%;
@@ -4562,6 +4590,9 @@ p[_section] {
 @media screen and (min-width: 992px) {
   section {
     padding: 1em 3em;
+  }
+  section.section-first {
+    padding: 0em 0em;
   }
   .column-section {
     flex: 0 0 33.33%;
