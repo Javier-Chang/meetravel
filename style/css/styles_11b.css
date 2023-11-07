@@ -2582,7 +2582,11 @@ p {
 }
 
 p.section-first {
-    font-size: 22px
+    font-size: 30px
+}
+
+p.section-third {
+    font-size: 30px
 }
 
 @media screen and (max-width: 640px) {
