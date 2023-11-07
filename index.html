@@ -156,7 +156,7 @@
 
 			<div class="pricing-tabs-wrapper md:max-w-xl lg:max-w-6xl m-auto mt-6">
                     <div class="grid grid-cols-2 items-center text-center md:rounded-t-2xl bg-[#cbe2fa] shadow-inner p-3">
-                        <div plan-toggle="lite" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected">
+                        <div plan-toggle="lite" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
                             <h3 class="mb-2 pointer-events-none">瑞士</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none hidden">Switzerland</span>
                         </div>
@@ -166,7 +166,7 @@
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none hidden">&nbsp;Japan</span>
                         </div>
                     	-->
-                        <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
+                        <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected">
                             <h3 class="mb-2 pointer-events-none">蘭陽</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none">遊畫</span>
                         </div>
@@ -396,7 +396,7 @@
 
 		<script>
 			  var is_higer_plan = [4,5,6].some(number => number > 10);
-			  var default_plan = is_higer_plan ? 'growth' : 'lite';
+			  var default_plan = is_higer_plan ? 'growth' : 'business';
 			  var url_string = window.location.href;
 			  var url = new URL(url_string);
 			  var params = new URLSearchParams(url.search);
