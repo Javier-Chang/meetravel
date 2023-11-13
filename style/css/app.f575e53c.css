@@ -302,7 +302,7 @@ h3.section-third {
 
 p.section-first {
     text-align:center;
-    color: #4D0000;
+    color: #ffc107;
     text-decoration:none;
 }
 
@@ -3260,8 +3260,8 @@ buttons-toggle [data-toggle-trigger]+*.is-opened {
 
 
 .btn-first{
-    color: #ffc107;
-    border-color: #ffc107;
+    color: #4D0000;
+    border-color: #4D0000;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
