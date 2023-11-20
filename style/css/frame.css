@@ -696,6 +696,13 @@ footer[_ngcontent-mqm-c67] {
     position: relative
 }
 
+footer[_ngcontent-mqm-c67-conference] {
+    display: block;
+    color: #fff;
+    background: #e17638;
+    position: relative
+}
+
 .container[_ngcontent-mqm-c67] {
     padding: 1em;
     flex-direction: column;

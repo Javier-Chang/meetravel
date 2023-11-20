@@ -4658,7 +4658,7 @@ p[_section] {
 }
 @media screen and (min-width: 992px) {
   section {
-    padding: 1em 3em;
+    padding: 1em 0em;
   }
   section.section-first {
     padding: 0em 0em;
