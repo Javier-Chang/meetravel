@@ -1,0 +1,162 @@
+@charset "utf-8";
+@page{size:auto; margin:10mm 10mm 10mm 10mm;}
+
+/* CSS Reset */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;} table{border-collapse:collapse;border-spacing:0;} fieldset, img{border:0;} address, caption, cite, code, dfn, em, var{font-style:normal; font-weight:normal;} q:before, q:after{content:'';} abbr, acronym{border:0; font-variant:normal;} sup{vertical-align:text-top;} sub{vertical-align:text-bottom;} input ,textarea, select{font-family:inherit; font-size:inherit; font-weight:inherit; *font-size:100%;} small{font-size:100%;} em{color:#c00;} input[type="checkbox"]{vertical-align:middle;}
+
+/* 比較清單列印 print-page */
+body{text-align:center; font-family:Arial,Helvetica,sans-serif,"新細明體"; word-break:break-all;}
+table th{text-align:right;}
+.print-page, .forward{width:640px; margin:0 auto; text-align:left; line-height:1.5; background:#fff;}
+.print-page tr{display:table-row !important;} 
+.print-page th, .print-page td{display:table-cell !important;}
+.print-head{border-bottom:3px solid #0A52AB; background:#fff; border-collapse:collapse; text-align:left; width:100%;}
+.print-page h1, .forward h1{font-size:14pt; line-height:1.3; margin:0; padding:0 0 .1em; position:static;}
+.msg-time{font-size:9pt; float:right; display: inline-block; margin:0 0 -15px 0;}
+.print-page .print-head img, .letterhead{margin:7px;}
+.print-page .print-head img{vertical-align:middle;}
+.data-tb{width:100%; font-size:8.5pt; border:1px solid #333; border-top-width:2px; text-align:center; line-height:1.5em; border-collapse:collapse;}
+.data-tb th, .data-tb td{border:1px solid #333; border-width:0 1px 1px 0; padding:2px 3px; vertical-align:middle; *display:table-row;}
+.impo{ border:2px solid #555; width:640px;}
+.re-sign{padding-right:100px; display:inline-block;}
+.data-tb .airline-logo img{display:none;}
+.data-tb tbody th{display:table-cell !important; background:#e3efff url(/st_ec/img/bg_spritex.gif) repeat-x center bottom; border-left-color:#ccc; padding:3px 2px; padding:7px 2px 3px \9; text-align:center;}
+.data-tb thead th{display:table-cell !important; border-bottom:2px solid #555; padding:2px;}
+.data-tb tbody td{display:table-cell !important;}
+.data-tb p{text-align:left; padding:2px; line-height:1.5em; word-break:break-all;}
+.data-tb.cell-mix th{background:#EAF3FF; text-align:right;}
+.data-tb.cell-mix2 th{background:#EAF3FF; }
+.data-tb.cell-mix2 thead th{background:#EAF3FF; text-align:center;}
+.data-tb.cell-mix2 th.meal{background:#eeeeee; text-align:center;}
+.gfglist{width:640px; border:none; line-height:1.5em; border-collapse:collapse;}
+.gfglist td{display:table-cell !important; border:none; padding:0; margin:0}
+
+.cnt-box{border:0; font-size:8pt;}
+.cnt-box.footnote{background:none;}
+.content li{background:none; list-style-type:disc; list-style-position:inside; padding-left:1em; text-indent:-1em; font-size:9pt;}
+.content ol li{background:none; list-style-position:outside; text-indent:0; line-height:1.7; margin:3px;}
+.h3-title{ margin:0; padding:0; vertical-align:middle; height:30px;}
+.h3-title img{ margin:0px 0 -7px 0; width:9px; height:30px;}
+
+/* container print-page */
+.print-page .header{height:40px; margin:10px auto 0;}
+.container.print-page{width:640px;}
+.container.print-page .content h1{font-size:23px; background:none; padding-left:0; margin:5px 0;}
+.container.print-page .content .pd-num{position:static; left:auto; top:auto; float:right; margin-top:-30px;}
+.print-page .footer{width:620px; margin-top:20px;}
+.tips, figcaption, .qr-code, .icon-map{display:none;}
+.pd-photo{width:220px;}
+.pd-photo p.txt-gy{width:205px;}
+figure{padding:0; width:auto; margin-top:10px;}
+figure figcaption{display:none;}
+figure img, .pd-photo img{width:210px; height:140px; margin:5px;}
+.pd-content, .pd-content .feature-list, .feature-list li{width:375px;}
+.pd-content li{margin-bottom:0; line-height:1.4em;}
+.feature-list{font-size:9pt;}
+.feature-list li{text-indent:0; padding-left:0;}
+.feature-list li.promo-item cite{width:285px;}
+.section{clear:both;}
+.section h3{background:none; padding:0;}
+.h3-b{vertical-align:middle;}
+.section .cnt-box{font-size:9pt;}
+.two-ways .blank-set{width:47%;}
+.blank-set small{margin:0.5em 0 1em; width:15em; *width:14em;}
+.two-ways .blank-set label{*margin-top:.75em;}
+.data-tb .day-bdr{background:none;}
+.data-tb .day-bdr span, .data-tb .day-bdr .hdp-spmoney{color:#222;}
+.data-tb .day-bdr .hdp-spmoney a:link, .data-tb .day-bdr .hdp-spmoney a:visited{color:#0C6FD1}
+.data-tb .day-bdr .hdp-spmoney span.txt-gy{color:#999;}
+.tourist-data p{float:none; width:100%; *width:95%; padding-right:0;}
+.icon-download-2{display:none;}
+/* Overwrite 房型名稱日曆 */
+.room-day{float:left; margin:0 0 10px 15px;}
+.room-day p{display:none;}
+.room-feature.type2{width:auto;}
+.room-select-hd{border-bottom:2px solid #000;}
+.room-select-hd h3{float:none; width:auto;}
+.room-select-hd q{float:none; margin-left:0;}
+.data-tb .has-promo{background-image:none;}
+/* Overwrite Google Map 大小 */
+.googlemap{height:300px;}
+/* Overwrite 行程簡介圖文combo組合 */
+.combo{margin:0; width:620px;}
+.combo article, .combo.mode1 article, .combo.mode2 article, .combo.mode3 article, .combo.mode4 article, .combo.mode5 article, .combo.mode6 article{margin:0 0 0 10px; width:610px;}
+.combo article{clear:left;}
+.combo article h4{font-size:12pt; padding:5px 0;}
+.combo img{margin:5px;}
+.combo.mode2 .pic-s{margin-left:5px;}
+.combo.mode6 img{margin-right:3px;}
+/* Overwrite 景點介紹 */
+.carousel{border:0;}
+.slide-unit{padding-bottom:10px; border-bottom:1px dotted #555;}
+.pic{position:static;}
+.print-page .scene-intro{float:none; margin-left:10px; width:610px;}
+.scene-intro h4{margin-bottom:10px; padding-bottom:0; border-bottom:0;}
+.scene-intro .intro-scroll{overflow-y:visible; overflow-x:visible; height:auto;}
+.scene-intro .intro-scroll p{padding:5px 0;}
+.thumbs-box{display:none;}
+/* Overwrite 參考行程 */
+.print-page .schedule{border:1px solid #999;}
+.schedule h3{font-size:10pt; text-indent:0; padding:3px 5px; line-height:1.3em;}
+.schedule h3 strong{border-right:1px solid #555;} 
+.schedule h3 strong span{font-size:10pt;}
+.schedule dl{width:630px;}
+.schedule dd{width:590px;}
+/* Overwrite GDG 出發日選擇 */
+.calendar-box{width:100%; float:none; margin-bottom:20px;}
+.next-month{margin:0; text-align:left;}
+.calendar-head .btn-func{display:none;}
+.calendar-head strong, .next-month .calendar-head strong{margin:0;}
+.more-info-box{display:none; visibility:hidden;}
+/* Overwrite GFG 出發日選擇 */
+.trip-tb-outline{width:100%; border-collapse:collapse; margin-bottom:10px; border:0 none;}
+.trip-tb-outline th, .trip-tb-outline td{border:1px solid #555; padding:5px;}
+.trip-tb-outline th{vertical-align:text-top;}
+.trip-tb{width:100%; line-height:1.5em; border-collapse:collapse; border:1px solid #999;}
+.trip-tb th, .trip-tb td{padding:2px 3px; vertical-align:middle; *display:table-row; border:1px solid #999;}
+.trip-tb th{text-align:center;}
+.trip-tb td img{vertical-align:middle;}
+.trip-tb h4{display:inline;}
+.trip-tb .tp-mon{vertical-align:text-top;}
+.trip-tb .tp-mon strong{padding:.5em 0; display:block;}
+.trip-tb .tp-day{vertical-align:text-top; width:3em; text-align:center; padding:0;}
+.trip-tb .tp-day .tp-promo{display:block; float:left; position:relative; top:-1px;}
+.trip-tb td .data-tb{display:inline-table; width:350px; border:0;}
+.trip-tb td .data-tb thead td{padding:1px; border:0; border-bottom:1px solid #555; background:none;}
+.trip-tb td .data-tb tbody td{padding:1px; border:0;}
+
+/* 商品頁列印 container forward */
+.forward table, .forward p, .forward li, .forward cite{font-size:13px;}
+.forward{width:800px;}
+.forward .content{margin-top:0;}
+.forward .footer{width:780px;}
+.forward .data-tb {border-top:1px solid #ccc;}
+.forward .data-tb thead th{border-bottom:1px solid #ccc;}
+.forward .combo{display:inline-table;}
+.forward .combo img, .forward .combo article{float:none; display:block;}
+.forward .combo img, .forward .combo.mode2 .pic-s{margin-bottom:10px;}
+.forward .combo article, .forward .combo.mode1 article, .forward .combo.mode2 article, .forward .combo.mode3 article, .forward .combo.mode4 article, .forward .combo.mode5 article, .forward .combo.mode6 article{margin:0 0 0 10px; width:auto;}
+.forward .scene-intro{float:none; width:778px;}
+.forward .scene-intro .intro-scroll p{padding:5px 0;}
+.forward .trip-tb-outline th, .forward .trip-tb-outline td{border:1px solid #ccc;}
+.forward .trip-tb{border:1px solid #ccc;}
+.forward .trip-tb th, .forward .trip-tb td{border:1px solid #ccc;}
+.forward .trip-tb td .data-tb{width:520px;}
+.regard{font-size:15px; line-height:1.5em; margin:0 8px 15px;}
+/* 文字對齊 */
+.left{text-align:left;} .center{text-align:center;} .right{text-align:right;}
+.function-right{float:right; z-index:9; margin-top:0; font-weight:normal; color:#666; font-size:.85em;}
+/*行高*/
+.line-1-75{line-height:1.75em;} 
+/* 字體大小 */
+.t-sm{font-size:13px;} .t-mid{font-size:15px;} .t-large{font-size:18px;}
+/* 加4邊 border#ccc */
+.bdr-t{border-top:1px solid #ccc;} .bdr-b{border-bottom:1px solid #ccc;} .bdr-l{border-left:1px solid #ccc;} .bdr-r{border-right:1px solid #ccc;}
+/* 清4邊 border */
+.bdr-clean-t{border-top:0 none;} .bdr-clean-b{border-bottom:0 none;} .bdr-clean-l{border-left:0 none;} .bdr-clean-r{border-right:0 none;}
+/* 清4邊 margin */
+.mgn-clean{margin:0;} .offset-top, .mgn-clean-t{margin-top:0;} .mgn-clean-b{margin-bottom:0;} .mgn-clean-l{margin-left:0;} .mgn-clean-r{margin-right:0;}
+/* 清4邊 padding */
+.pad-clean{padding:0;} .pad-clean-t{padding-top:0;} .pad-clean-b{padding-bottom:0;} .pad-clean-l{padding-left:0;} .pad-clean-r{padding-right:0;}
+/*信用卡授權書-票規限制與說明 */
+ol{margin-left:1.5em; padding:.2em; text-align:left; }
