@@ -295,6 +295,11 @@ h3.section-first {
     color: #ffc107;
 }
 
+h3.section-second {
+    letter-spacing: 1.3px;
+    color: #ffd740f5;
+}
+
 h3.section-third {
     letter-spacing: 1.3px;
     color: #ffd740f5;
@@ -307,9 +312,16 @@ p.section-first {
     font-family: DFKai-sb;
 }
 
+p.section-second {
+    text-align:center;
+    color: #fff;
+    text-decoration:none;
+    font-size: 25px;
+}
+
 p.section-third {
     text-align:center;
-    color: #ffd740f5;
+    color: #bd5907;
     text-decoration:none;
 }
 
@@ -3278,6 +3290,24 @@ buttons-toggle [data-toggle-trigger]+*.is-opened {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.btn-first-second{
+    color: #fff;
+    border-color: #4D0000;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 
 .loader,.btn.btn-loading:before {
     display: inline-block;
@@ -4585,10 +4615,23 @@ section {
   transition: 0.5s;
 }
 
-.card-section-third {
+.card-section-second {
   width: 100%;
   height: 100%;
   background: linear-gradient(#ffffff 0%, #364bdbbf 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-section-third {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%, #e18438 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
   border-radius: 5px;
@@ -4628,6 +4671,10 @@ p[_section] {
 .card-section-first:hover {
   background-position: 0 100%;
 }
+.card-section-third:hover {
+  background-position: 0 100%;
+}
+
 .card-section:hover .icon-wrapper {
   background-color: #ffffff;
   color: #2c7bfe;
@@ -4636,12 +4683,24 @@ p[_section] {
   background-color: #ffffff;
   color: #2c7bfe;
 }
+.card-section-third:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #2c7bfe;
+}
+
 .card-section:hover h3 {
   color: #ffffff;
 }
 .card-section:hover p {
   color: #f0f0f0;
 }
+.card-section-third:hover h3 {
+  color: #ffffff;
+}
+.card-section-third:hover p {
+  color: #f0f0f0;
+}
+
 @media screen and (min-width: 768px) {
   section {
     padding: 0 2em;
