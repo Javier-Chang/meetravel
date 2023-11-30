@@ -752,7 +752,7 @@ footer[_ngcontent-mqm-c67-conference] {
 .column[_ngcontent-mqm-c67] {
     flex: 1 1 auto;
     margin: 1em 1em 0;
-    max-width: 20em
+    max-width: 23em
 }
 
 .column[_ngcontent-mqm-c67]:first-child {
@@ -764,16 +764,17 @@ footer[_ngcontent-mqm-c67-conference] {
 }
 
 .column[_ngcontent-mqm-c67]:nth-child(3) {
-    max-width: 6em
+    max-width: 8em
 }
 
 h3[_ngcontent-mqm-c67] {
-    margin-bottom: 1em
+    margin-bottom: 0em;
+    font-weight:bold;
 }
 
 p[_ngcontent-mqm-c67] {
     display: flex;
-    margin-bottom: .5em;
+    margin-bottom: 0em;
     white-space: nowrap
 }
 

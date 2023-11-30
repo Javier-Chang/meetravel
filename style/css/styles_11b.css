@@ -2904,7 +2904,7 @@ body {
     border: 0;
     margin: 0;
     padding: 0;
-    line-height: 1.5em;
+    /*line-height: 1.5em;*/
     box-sizing: border-box;
     box-shadow: none;
     flex: 0 0 auto;
