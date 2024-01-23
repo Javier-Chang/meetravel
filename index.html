@@ -179,8 +179,13 @@
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none">Painting</span>
                         </div>
                         <div plan-toggle="WorldSports" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
+                        	<!-- 
                             <h3 class="mb-2 pointer-events-none">世壯運</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none">World Sports</span>
+                        	-->
+                        	<h3 class="mb-2 pointer-events-none">
+                        		<img class="separater ng-star-inserted" src="style/images/世壯運logo.png">
+                        	</h3>
                         </div>
                     </div>
                     <div class="md:rounded-b-2xl py-6 md:py-10-change bg-[#e0efff]">
@@ -459,7 +464,9 @@
 			    document.querySelectorAll('.label-sales').forEach(label => label.classList.add('hidden'));
 			    document.querySelector('[plan-name="'+handle+'"]').classList.remove('hidden');
 			    document.querySelector('[plan-toggle="'+handle+'"]').classList.add('is-selected');
-			    document.querySelector('[plan-toggle="'+handle+'"] .label-sales').classList.remove('hidden');
+			    if(document.querySelector('[plan-toggle="'+handle+'"] .label-sales')){
+			    	document.querySelector('[plan-toggle="'+handle+'"] .label-sales').classList.remove('hidden');
+			    }
 			    setParam(handle)
 			  }
 		</script>
