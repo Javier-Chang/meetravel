@@ -1,21 +1,62 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://meetravel.tw/</loc>
-		<loc>https://meetravel.tw/NMN/</loc>
-		<loc>https://meetravel.tw/NMN/index.html</loc>
-		<loc>https://meetravel.tw/travel/</loc>
-		<loc>https://meetravel.tw/travel/index.html</loc>
-		<loc>https://meetravel.tw/ideapr/</loc>
-		<loc>https://meetravel.tw/ideapr/index.html</loc>
-		<loc>https://meetravel.tw/travel/dinner.html</loc>
-		<loc>https://meetravel.tw/travel/about.html</loc>
-		<loc>https://meetravel.tw/travel/conference.html</loc>
-		<loc>https://meetravel.tw/travel/Customer_Rights/Consumer_Rights.html</loc>
-		<loc>https://meetravel.tw/travel/Customer_Rights/Shopping_Notes.html</loc>
-		<loc>https://meetravel.tw/travel/Customer_Rights/privacy_policy.html</loc>
-		<loc>https://meetravel.tw/travel/Customer_Rights/Terms_of_Service.html</loc>
-		<loc>https://meetravel.tw/travel/Customer_Rights/Refund_Policy.html</loc>
-		<loc>https://meetravel.tw/travel/Customer_Rights/Dispute_Resolution.html</loc>
-	</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://meetravel.tw/travel/</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/index.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/about.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/detailed_services.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Terms_of_Service.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/privacy_policy.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Consumer_Rights.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Shopping_Notes.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Refund_Policy.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Dispute_Resolution.html</loc>
+  <lastmod>2024-03-22T07:18:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
