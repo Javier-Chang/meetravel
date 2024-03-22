@@ -2,14 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://meetravel.tw/</loc>
-		<loc>https://meetravel.tw/index.html</loc>
-		<loc>https://meetravel.tw/dinner.html</loc>
-		 <loc>https://meetravel.tw/conference.html</loc>
-		<loc>https://meetravel.tw/Customer_Rights/Consumer_Rights.html</loc>
-		<loc>https://meetravel.tw/Customer_Rights/Shopping_Notes.html</loc>
-		<loc>https://meetravel.tw/Customer_Rights/privacy_policy.html</loc>
-		<loc>https://meetravel.tw/Customer_Rights/Terms_of_Service.html</loc>
-		<loc>https://meetravel.tw/Customer_Rights/Refund_Policy.html</loc>
-		<loc>https://meetravel.tw/Customer_Rights/Dispute_Resolution.html</loc>
+		<loc>https://meetravel.tw/NMN/index.html</loc>
+		<loc>https://meetravel.tw/travel/index.html</loc>
+		<loc>https://meetravel.tw/travel/dinner.html</loc>
+		<loc>https://meetravel.tw/travel/about.html</loc>
+		<loc>https://meetravel.tw/travel/conference.html</loc>
+		<loc>https://meetravel.tw/travel/Customer_Rights/Consumer_Rights.html</loc>
+		<loc>https://meetravel.tw/travel/Customer_Rights/Shopping_Notes.html</loc>
+		<loc>https://meetravel.tw/travel/Customer_Rights/privacy_policy.html</loc>
+		<loc>https://meetravel.tw/travel/Customer_Rights/Terms_of_Service.html</loc>
+		<loc>https://meetravel.tw/travel/Customer_Rights/Refund_Policy.html</loc>
+		<loc>https://meetravel.tw/travel/Customer_Rights/Dispute_Resolution.html</loc>
 	</url>
 </urlset>
