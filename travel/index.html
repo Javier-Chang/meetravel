@@ -114,7 +114,7 @@
 
 			<div class="pricing-tabs-wrapper md:max-w-xl lg:max-w-6xl m-auto mt-6">
                     <div class="grid grid-cols-4 items-center text-center md:rounded-t-2xl bg-[#cbe2fa] shadow-inner p-3">
-                        <div plan-toggle="lite" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
+                        <div plan-toggle="Switzerland" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
                             <h3 class="mb-2 pointer-events-none">瑞士</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none hidden">Switzerland</span>
                         </div>
@@ -122,11 +122,11 @@
                             <h3 class="mb-2 pointer-events-none">日本</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none hidden">Japan</span>
                         </div>
-                        <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected">
+                        <div plan-toggle="business" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
                             <h3 class="mb-2 pointer-events-none">遊畫</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none">Painting</span>
                         </div>
-                        <div plan-toggle="WorldSports" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer">
+                        <div plan-toggle="WorldSports" class="tab-title px-2 py-6 m-0 text-blue-dark cursor-pointer is-selected" >
                         	<!-- 
                             <h3 class="mb-2 pointer-events-none">世壯運</h3>
                             <span class="label label-sales label-section w-fit mx-auto pointer-events-none">World Sports</span>
@@ -138,7 +138,7 @@
                     </div>
                     <div class="md:rounded-b-2xl py-6 md:py-10-change bg-[#e0efff]">
 
-                        <div plan-name="lite" plan-type="ecommerce" class="grid gap-5 py-6 px-8-first md:px-4 md:max-w-xl lg:max-w-5xl-first m-auto hidden">
+                        <div plan-name="Switzerland" plan-type="ecommerce" class="grid gap-5 py-6 px-8-first md:px-4 md:max-w-xl lg:max-w-5xl-first m-auto hidden">
                             <section class="section-first">
 						      	<div class="row-section">
 							        <div class="column-section-first">
@@ -410,12 +410,49 @@
 			  var params = new URLSearchParams(url.search);
 			  var search_params = params.get("plan");
 
-			  displayPlan(search_params || default_plan)
+			  //displayPlan('WorldSports');
 
-			  document.querySelectorAll('[plan-toggle]').forEach(button => {
-			    button.addEventListener('click',(el)=>{
-			      displayPlan(el.target.getAttribute('plan-toggle'));
-			    })
+			  // displayPlan(search_params || default_plan)
+
+			  // document.querySelectorAll('[plan-toggle]').forEach(button => {
+			  //   button.addEventListener('click',(el)=>{
+			  //     displayPlan(el.target.getAttribute('plan-toggle'));
+			  //   })
+			  // });
+
+			  document.querySelector('[plan-name="WorldSports"]').classList.remove('hidden');
+
+			  document.addEventListener('DOMContentLoaded', function() {
+			    // 當文檔加載完畢後，設定事件監聽器
+			    var switzerlandPlanDiv = document.querySelector('div[plan-toggle="Switzerland"]');
+			    var standardPlanDiv = document.querySelector('div[plan-toggle="standard"]');
+			    var businessPlanDiv = document.querySelector('div[plan-toggle="business"]');
+			    var worldSportsPlanDiv = document.querySelector('div[plan-toggle="WorldSports"]');
+
+			    if(switzerlandPlanDiv) {
+			      switzerlandPlanDiv.addEventListener('click',(el) => {
+			        // 當被點擊時，調用 displayPlan 函式並傳入 "Switzerland"
+			        displayPlan('Switzerland');
+			      });
+			    }
+			    if(worldSportsPlanDiv) {
+			      worldSportsPlanDiv.addEventListener('click',(el) => {
+			        // 當被點擊時，調用 displayPlan 函式並傳入 "WorldSports"
+			        displayPlan('WorldSports');
+			      });
+			    }
+			   if(standardPlanDiv) {
+			      standardPlanDiv.addEventListener('click',(el) => {
+			        // 當被點擊時，調用 displayPlan 函式並傳入 "standard"
+			        displayPlan('standard');
+			      });
+			    }
+			    if(businessPlanDiv) {
+			      businessPlanDiv.addEventListener('click',(el) => {
+			        // 當被點擊時，調用 displayPlan 函式並傳入 "business"
+			        displayPlan('business');
+			      });
+			    }
 			  });
 			  
 			  function setParam(plan){
