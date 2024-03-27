@@ -9,7 +9,68 @@
 
 <url>
   <loc>https://meetravel.tw/</loc>
-  <lastmod>2024-03-22T08:51:20+00:00</lastmod>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/NMN/</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/ideapr/</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/index.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/about.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/detailed_services.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Terms_of_Service.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/privacy_policy.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Consumer_Rights.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Shopping_Notes.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Refund_Policy.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://meetravel.tw/travel/Customer_Rights/Dispute_Resolution.html</loc>
+  <lastmod>2024-03-26T14:15:22+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
