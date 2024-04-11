@@ -4575,6 +4575,7 @@ section {
 .row-section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .column-section {
   width: 100%;
@@ -4716,8 +4717,8 @@ p[_section] {
     max-width: 50%;
   }
   .column-section-first {
-    flex: 0 50%;
-    max-width: 50%;
+    flex: 0 100%;
+    max-width: 100%;
   }
   .column-section-half {
     flex: 0 50%;
